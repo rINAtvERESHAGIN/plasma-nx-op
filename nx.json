@@ -44,6 +44,11 @@
   "targetDefaults": {
     "e2e-ci--**/*": {
       "dependsOn": ["^build"]
+    },
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   },
   "defaultProject": "org",
@@ -63,6 +68,11 @@
         "linter": "eslint",
         "unitTestRunner": "vitest"
       }
+    }
+  },
+  "release": {
+    "version": {
+      "preVersionCommand": "pnpm dlx nx run-many -t build"
     }
   }
 }

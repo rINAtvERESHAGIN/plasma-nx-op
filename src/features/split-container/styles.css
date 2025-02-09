@@ -1,0 +1,53 @@
+.custom-reflex-splitter {
+    position: relative;
+    width: 4px !important;
+    height: 100%; 
+    transition: width 0.1s ease-in-out !important;
+    z-index: 1000;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.custom-reflex-splitter::before,
+.custom-reflex-splitter::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.custom-reflex-splitter::before {
+    left: -10px;
+}
+
+.custom-reflex-splitter::after {
+    right: -10px;
+}
+
+.custom-reflex-splitter:hover {
+    width: 12px !important; 
+}
+
+.panel-close-button {
+    z-index: 1001;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    transition: display 0.1s;
+    background: none; 
+    border: none; 
+}
+
+.custom-reflex-splitter:hover .panel-close-button {
+    display: flex; 
+}

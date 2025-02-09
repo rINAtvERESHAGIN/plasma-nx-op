@@ -1,0 +1,807 @@
+{
+    "RU-BU": {
+        "markerCoordinates": [
+            [
+                110.00882409348816,
+                53.23968755905295
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-KC": {
+        "markerCoordinates": [
+            [
+                41.76866475264458,
+                43.77336672880847
+            ]
+        ],
+        "markerSize": 0.9
+    },
+    "RU-SAK": {
+        "markerCoordinates": [
+            [
+                142.99124257379835,
+                50.01020138564422
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-VOR": {
+        "markerCoordinates": [
+            [
+                40.143545259383814,
+                51.21889784638418
+            ]
+        ],
+        "markerSize": 1.5
+    },
+    "RU-TOM": {
+        "markerCoordinates": [
+            [
+                82.61961403885937,
+                58.803091008888686
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-NVS": {
+        "markerCoordinates": [
+            [
+                79.67011704807834,
+                55.43628956001339
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-NEN": {
+        "markerCoordinates": [
+            [
+                56.697742584206026,
+                67.76862854399295
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-MAG": {
+        "markerCoordinates": [
+            [
+                152.97145204871777,
+                62.83003198117967
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-KAM": {
+        "markerCoordinates": [
+            [
+                158.75990805112679,
+                56.22406162274075
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-PRI": {
+        "markerCoordinates": [
+            [
+                134.88256605804173,
+                45.469416621621974
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-STA": {
+        "markerCoordinates": [
+            [
+                43.47167459483484,
+                44.88379854852724
+            ]
+        ],
+        "markerSize": 1.7
+    },
+    "RU-ALT": {
+        "markerCoordinates": [
+            [
+                83.33086176994753,
+                52.481666122057334
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-MOW": {
+        "markerCoordinates": [
+            [
+                37.63317140782274,
+                55.74926999000604
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-TY": {
+        "markerCoordinates": [
+            [
+                96.46545356826635,
+                52.05335775285653
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-TAM": {
+        "markerCoordinates": [
+            [
+                41.63444410883011,
+                52.5992545908054
+            ]
+        ],
+        "markerSize": 1.1
+    },
+    "RU-SVE": {
+        "markerCoordinates": [
+            [
+                62.25123164147294,
+                58.217551933456804
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-KHM": {
+        "markerCoordinates": [
+            [
+                70.63989953334976,
+                61.36014537058904
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-CHU": {
+        "markerCoordinates": [
+            [
+                171.3036592255354,
+                66.65431594422566
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-TYU": {
+        "markerCoordinates": [
+            [
+                68.27490522677937,
+                57.28332119679118
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-VLA": {
+        "markerCoordinates": [
+            [
+                41.00749030195149,
+                55.981862283264974
+            ]
+        ],
+        "markerSize": 1.3
+    },
+    "RU-MOS": {
+        "markerCoordinates": [
+            [
+                38.658150396696726,
+                55.2492903691643
+            ]
+        ],
+        "markerSize": 1.2
+    },
+    "RU-VGG": {
+        "markerCoordinates": [
+            [
+                44.06419387522942,
+                49.73815287473715
+            ]
+        ],
+        "markerSize": 2.6
+    },
+    "RU-ORE": {
+        "markerCoordinates": [
+            [
+                54.055905268051134,
+                52.378602229777346
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-SAM": {
+        "markerCoordinates": [
+            [
+                50.263264841008305,
+                53.12341962890809
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-AST": {
+        "markerCoordinates": [
+            [
+                47.784576977127955,
+                47.06700648357511
+            ]
+        ],
+        "markerSize": 1.1
+    },
+    "RU-AD": {
+        "markerCoordinates": [
+            [
+                40.15448171802282,
+                44.5151877634826
+            ]
+        ],
+        "markerSize": 0.5
+    },
+    "RU-KL": {
+        "markerCoordinates": [
+            [
+                45.136055132080514,
+                46.366646712775406
+            ]
+        ],
+        "markerSize": 1.7
+    },
+    "RU-KDA": {
+        "markerCoordinates": [
+            [
+                39.253353343309186,
+                45.76085647307002
+            ]
+        ],
+        "markerSize": 1.5
+    },
+    "RU-ROS": {
+        "markerCoordinates": [
+            [
+                41.190189760992666,
+                47.50857578902975
+            ]
+        ],
+        "markerSize": 1.8
+    },
+    "RU-MUR": {
+        "markerCoordinates": [
+            [
+                35.93388080689556,
+                67.81535769117701
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-PSK": {
+        "markerCoordinates": [
+            [
+                29.413012092067504,
+                57.15873506890455
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-SPE": {
+        "markerCoordinates": [
+            [
+                30.342154004566993,
+                59.88834625750562
+            ]
+        ],
+        "markerSize": 0.5
+    },
+    "RU-LEN": {
+        "markerCoordinates": [
+            [
+                32.746003228442845,
+                60.032375511515
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-MO": {
+        "markerCoordinates": [
+            [
+                43.93683957506147,
+                54.35902489159836
+            ]
+        ],
+        "markerSize": 1
+    },
+    "RU-TA": {
+        "markerCoordinates": [
+            [
+                50.90769181631387,
+                55.40596001761875
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-KIR": {
+        "markerCoordinates": [
+            [
+                49.62310023844489,
+                58.22928364555611
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-KOS": {
+        "markerCoordinates": [
+            [
+                43.60960467611713,
+                58.49150629078886
+            ]
+        ],
+        "markerSize": 2.5
+    },
+    "RU-TVE": {
+        "markerCoordinates": [
+            [
+                34.882577769493196,
+                57.08185509667149
+            ]
+        ],
+        "markerSize": 2.5
+    },
+    "RU-TUL": {
+        "markerCoordinates": [
+            [
+                37.644601038299754,
+                53.85617109278101
+            ]
+        ],
+        "markerSize": 1.1
+    },
+    "RU-KLU": {
+        "markerCoordinates": [
+            [
+                35.27160062952632,
+                54.297087185541386
+            ]
+        ],
+        "markerSize": 1.2
+    },
+    "RU-ULY": {
+        "markerCoordinates": [
+            [
+                47.58471535937139,
+                54.10939454233775
+            ]
+        ],
+        "markerSize": 1.5
+    },
+    "RU-ME": {
+        "markerCoordinates": [
+            [
+                48.14433503569839,
+                56.58180034155734
+            ]
+        ],
+        "markerSize": 1.3
+    },
+    "RU-SMO": {
+        "markerCoordinates": [
+            [
+                32.177009761014375,
+                55.02064062000747
+            ]
+        ],
+        "markerSize": 1.8
+    },
+    "RU-PER": {
+        "markerCoordinates": [
+            [
+                56.06436007352187,
+                58.7516966256963
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-IVA": {
+        "markerCoordinates": [
+            [
+                41.70022321831232,
+                57.04176733674177
+            ]
+        ],
+        "markerSize": 1.1
+    },
+    "RU-CU": {
+        "markerCoordinates": [
+            [
+                47.001470972984386,
+                55.56802187451089
+            ]
+        ],
+        "markerSize": 1.2
+    },
+    "RU-SE": {
+        "markerCoordinates": [
+            [
+                44.179832233933155,
+                43.001425374984564
+            ]
+        ],
+        "markerSize": 0.8
+    },
+    "RU-BRY": {
+        "markerCoordinates": [
+            [
+                33.6786235373925,
+                53.14330199369189
+            ]
+        ],
+        "markerSize": 1.3
+    },
+    "RU-PNZ": {
+        "markerCoordinates": [
+            [
+                44.7638889586575,
+                53.08815924657671
+            ]
+        ],
+        "markerSize": 1.6
+    },
+    "RU-BEL": {
+        "markerCoordinates": [
+            [
+                37.83080370217783,
+                50.83278222790747
+            ]
+        ],
+        "markerSize": 1
+    },
+    "RU-LIP": {
+        "markerCoordinates": [
+            [
+                39.02171295598268,
+                52.65657692764242
+            ]
+        ],
+        "markerSize": 1
+    },
+    "RU-NGR": {
+        "markerCoordinates": [
+            [
+                32.28832751231772,
+                58.4036560917134
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-ARK": {
+        "markerCoordinates": [
+            [
+                42.41676112438054,
+                63.451747328698445
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-NIZ": {
+        "markerCoordinates": [
+            [
+                44.192781415951316,
+                56.243247848507536
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-KGN": {
+        "markerCoordinates": [
+            [
+                64.15043182497126,
+                55.47675883702465
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-KRS": {
+        "markerCoordinates": [
+            [
+                36.04445802024034,
+                51.66712367637996
+            ]
+        ],
+        "markerSize": 1.3
+    },
+    "RU-ZAB": {
+        "markerCoordinates": [
+            [
+                116.98427826360376,
+                52.51832492153585
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-AL": {
+        "markerCoordinates": [
+            [
+                86.8861691778871,
+                50.90618434552128
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-RYA": {
+        "markerCoordinates": [
+            [
+                40.51836151658455,
+                54.447873972989754
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-YAN": {
+        "markerCoordinates": [
+            [
+                75.68234860151378,
+                65.32095676325582
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-KYA": {
+        "markerCoordinates": [
+            [
+                94.12981640664259,
+                57.90779539815456
+            ],
+            [
+                90.39635802939046,
+                69.86199559644925
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-SA": {
+        "markerCoordinates": [
+            [
+                127.13274878141306,
+                61.88950844206704
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-DA": {
+        "markerCoordinates": [
+            [
+                47.13055673426135,
+                42.4396469914964
+            ]
+        ],
+        "markerSize": 1.2
+    },
+    "RU-OMS": {
+        "markerCoordinates": [
+            [
+                73.33893784608384,
+                56.291980854973104
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-KO": {
+        "markerCoordinates": [
+            [
+                56.56188608262863,
+                64.12343519806353
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-CE": {
+        "markerCoordinates": [
+            [
+                45.735624146492995,
+                43.283227001819796
+            ]
+        ],
+        "markerSize": 1
+    },
+    "RU-KB": {
+        "markerCoordinates": [
+            [
+                43.3218071888499,
+                43.48645126731782
+            ]
+        ],
+        "markerSize": 0.8
+    },
+    "RU-SAR": {
+        "markerCoordinates": [
+            [
+                47.323036980631315,
+                51.653572671340015
+            ]
+        ],
+        "markerSize": 2.7
+    },
+    "RU-KGD": {
+        "markerCoordinates": [
+            [
+                21.318709609087932,
+                54.727418437984426
+            ]
+        ],
+        "markerSize": 1.5
+    },
+    "RU-ORL": {
+        "markerCoordinates": [
+            [
+                36.53613002494137,
+                52.825900408172174
+            ]
+        ],
+        "markerSize": 1
+    },
+    "RU-KR": {
+        "markerCoordinates": [
+            [
+                33.76402742812197,
+                63.77490852812208
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-IRK": {
+        "markerCoordinates": [
+            [
+                105.19139137299064,
+                54.86195843631552
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-AMU": {
+        "markerCoordinates": [
+            [
+                127.99788420079849,
+                53.855598667243385
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-YEV": {
+        "markerCoordinates": [
+            [
+                131.99280019302995,
+                48.57494284770286
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-KHA": {
+        "markerCoordinates": [
+            [
+                135.46583684203262,
+                50.1739978252817
+            ]
+        ],
+        "markerSize": 4
+    },
+    "RU-KEM": {
+        "markerCoordinates": [
+            [
+                87.3672376225316,
+                54.919523974065015
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-KK": {
+        "markerCoordinates": [
+            [
+                90.19126468376525,
+                53.844268775728494
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-YAR": {
+        "markerCoordinates": [
+            [
+                39.08012460273619,
+                58.04066401536525
+            ]
+        ],
+        "markerSize": 1.8
+    },
+    "RU-UD": {
+        "markerCoordinates": [
+            [
+                52.88593785214289,
+                57.28133168964362
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-VLG": {
+        "markerCoordinates": [
+            [
+                38.0360282243073,
+                59.96295582580774
+            ]
+        ],
+        "markerSize": 3
+    },
+    "RU-IN": {
+        "markerCoordinates": [
+            [
+                44.90417851990048,
+                43.3317909188998
+            ]
+        ],
+        "markerSize": 0.5
+    },
+    "RU-CHE": {
+        "markerCoordinates": [
+            [
+                61.14610868067595,
+                54.69587575534774
+            ]
+        ],
+        "markerSize": 2
+    },
+    "RU-BA": {
+        "markerCoordinates": [
+            [
+                56.923967733621055,
+                53.814106516325666
+            ]
+        ],
+        "markerSize": 3
+    },
+    "UA-65": {
+        "markerCoordinates": [
+            [
+                33.7483861868177,
+                46.758959255638246
+            ]
+        ],
+        "markerSize": 1
+    },
+    "UA-09": {
+        "markerCoordinates": [
+            [
+                38.977533564237234,
+                49.140820385161476
+            ]
+        ],
+        "markerSize": 1
+    },
+    "UA-14": {
+        "markerCoordinates": [
+            [
+                37.676897304989524,
+                47.9439030434734
+            ]
+        ],
+        "markerSize": 1
+    },
+    "UA-23": {
+        "markerCoordinates": [
+            [
+                35.685937157618724,
+                47.23752173521464
+            ]
+        ],
+        "markerSize": 1
+    },
+    "UA-43": {
+        "markerCoordinates": [
+            [
+                34.24390380732646,
+                45.352204270226935
+            ]
+        ],
+        "markerSize": 1.3
+    },
+    "UA-40": {
+        "markerCoordinates": [
+            [
+                33.505565264764016,
+                44.56550828459879
+            ]
+        ],
+        "markerSize": 0.6
+    }
+}

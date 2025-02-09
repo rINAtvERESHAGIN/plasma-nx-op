@@ -1,0 +1,1 @@
+export const BORDER_COLORS = ['#A1C3CC', '#66B40E', '#E2C33A', '#01AEAD', '#6CE7E6', '#D95D18', '#ACE071', '#414961'];
