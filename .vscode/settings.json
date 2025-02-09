@@ -1,0 +1,7 @@
+{
+    "npm-scripts.showStartNotification": false,
+    "terminal.integrated.env.osx": {
+        "NVM_DIR": "$HOME/.nvm",
+        "PATH": "$HOME/.nvm/versions/node/$(nvm version)/bin:$PATH"
+      }
+}
