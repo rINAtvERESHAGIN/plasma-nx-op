@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useAppDispatch, useAppSelector } from '@app/store';
+
 import {
   HeaderSignature,
   Container,
@@ -8,15 +8,16 @@ import {
   OutletContainer,
   StyledLink,
   LoadingScreenContainer
-} from '@pages/root/ui.styled';
+} from './ui.styled';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { Navbar } from '@widgets/navbar/ui';
-import GeoMapService from '@shared/api/services/GeoMapService';
-import { updateDocument } from '@pages/root/model';
 import LoadingScreen from '../../entities/loading-screen/ui';
 import { isNil } from 'lodash';
-import { AppLogo } from '@shared/assets/images/app-logo/AppLogo';
-import { AppTitle } from '@shared/assets/images/app-title/AppLogo';
+import { useAppDispatch, useAppSelector } from 'store-plasma';
+import GeoMapService from '../../shared/api/services/GeoMapService';
+import { AppLogo } from '../../shared/assets/images/app-logo/AppLogo';
+import { AppTitle } from '../../shared/assets/images/app-title/AppLogo';
+import { Navbar } from '../globe-map/ui/ui.styled';
+import { updateDocument } from './model';
 
 const PLASMA_VERSION_APP = process.env.PLASMA_VERSION_APP;
 

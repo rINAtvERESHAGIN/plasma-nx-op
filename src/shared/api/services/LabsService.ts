@@ -1,7 +1,8 @@
-import { type CancelablePromise } from '@shared/api/core/CancelablePromise';
-import { type Lab } from '@shared/api/model/Lab';
-import { OpenAPI } from '@shared/api/core/OpenAPI';
+
+import { CancelablePromise } from '../core/CancelablePromise';
+import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
+import { Lab } from '../model/Lab';
 
 class LabsService {
   static requestLabs(): CancelablePromise<Lab[]> {

@@ -1,6 +1,5 @@
-import { OpenAPI } from '@shared/api/core/OpenAPI';
-import { request as __request } from '@shared/api/core/request';
-import { type CancelablePromise } from '@shared/api/core/CancelablePromise';
+import { CancelablePromise } from "../../../shared/api/core/CancelablePromise";
+import { OpenAPI } from "../../../shared/api/core/OpenAPI";
 
 class MapBoundariesService {
   static requestMapBoudaries(): CancelablePromise<any> {

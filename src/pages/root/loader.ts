@@ -1,18 +1,18 @@
-import { coreLoader, mainLoader } from '@pages/map/lib/loader';
-import { type LoaderFunction } from 'react-router';
-import AuthService from '@shared/api/services/AuthService';
-import { type RootState, store } from '@app/store';
-import { setLabs } from '@shared/model/labs';
-import { setParameters } from '@pages/parameter/model';
-import { setRegions } from '@shared/model/regions';
-import { CoreDataActionCreatorService } from '@app/core-data-slice/reducer';
-import { setActiveDefaultParameter } from '@shared/model/useActiveParameter';
-import { type ThunkAction } from 'redux-thunk';
-import { type AnyAction } from 'redux';
-import { setActiveDefaultLab } from '@shared/model/useActiveLab';
-import { setActiveDefaultRegion } from '@shared/model/useActiveRegion';
-import { setActiveDefaultAgeRange } from '@shared/model/useActiveAgeRange';
-import { setActiveDefaultHumanSex } from '@shared/model/useActiveHumanSex';
+import { RootState, store } from 'store-plasma';
+import { coreLoader, mainLoader } from '../map/lib/loader';
+import { setActiveDefaultParameter } from '../../shared/model/useActiveParameter';
+import { ThunkAction } from '@reduxjs/toolkit';
+import { LoaderFunction } from 'react-router-dom';
+import { AnyAction } from 'redux';
+import AuthService from '../../shared/api/services/AuthService';
+import { setLabs } from '../../shared/model/labs';
+import { setRegions } from '../../shared/model/regions';
+import { setActiveDefaultAgeRange } from '../../shared/model/useActiveAgeRange';
+import { setActiveDefaultHumanSex } from '../../shared/model/useActiveHumanSex';
+import { setActiveDefaultLab } from '../../shared/model/useActiveLab';
+import { setActiveDefaultRegion } from '../../shared/model/useActiveRegion';
+import { setParameters } from '../parameter/model';
+
 
 function extractPageNameFromUrl(url: string): string | null {
   const match = url.match(/\/([^/]+)$/);

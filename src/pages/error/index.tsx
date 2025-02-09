@@ -1,23 +1,23 @@
-import React, { lazy } from 'react';
-import { type ErrorResponse } from '@pages/error/lib/@error-types';
-import { useRouteError, isRouteErrorResponse } from 'react-router-dom';
-import SuspenseWithFallBack from '@shared/ui/suspense-with-fallback/ui';
-import LoadingScreen from '@entities/loading-screen/ui';
 import { Typography } from '@mui/material';
-import { CustomToolBar, HeaderSignature } from '@pages/root/ui.styled';
+import React, { lazy } from 'react';
+import { useRouteError, ErrorResponse, isRouteErrorResponse } from 'react-router-dom';
+import LoadingScreen from '../../entities/loading-screen/ui';
+import SuspenseWithFallBack from '../../shared/ui/suspense-with-fallback/ui';
+import { CustomToolBar, HeaderSignature } from '../root/ui.styled';
 
-const Auth401 = lazy(async () => await import(/* webpackChunkName: "Auth401" */ '@pages/error/ui/auth-401'));
+
+const Auth401 = lazy(async () => await import(/* webpackChunkName: "Auth401" */ '../error/ui/auth-401'));
 const NotFound404 = lazy(
-  async () => await import(/* webpackChunkName: "NotFound404" */ '@pages/error/ui/not-found-404')
+  async () => await import(/* webpackChunkName: "NotFound404" */ '../error/ui/not-found-404')
 );
 const UnprocessableEntity422 = lazy(
-  async () => await import(/* webpackChunkName: "UnprocessableEntity422" */ '@pages/error/ui/unprocessable-entity-422')
+  async () => await import(/* webpackChunkName: "UnprocessableEntity422" */ '../error/ui/unprocessable-entity-422')
 );
 const BadGateway502 = lazy(
-  async () => await import(/* webpackChunkName: "BadGateway502" */ '@pages/error/ui/bad-gateway-502')
+  async () => await import(/* webpackChunkName: "BadGateway502" */ '../error/ui/bad-gateway-502')
 );
 const Error504 = lazy(
-  async () => await import(/* webpackChunkName: "BadGateway502" */ '@pages/error/ui/gateway-timeout-504/ui')
+  async () => await import(/* webpackChunkName: "BadGateway502" */ '../error/ui/gateway-timeout-504/ui')
 );
 
 function ErrorRootContent(): React.ReactNode {

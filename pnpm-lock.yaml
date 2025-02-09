@@ -32,6 +32,9 @@ importers:
       '@emotion/react':
         specifier: ^11.14.0
         version: 11.14.0(@types/react@18.3.3)(react@18.3.0)
+      '@emotion/styled':
+        specifier: ^11.14.0
+        version: 11.14.0(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react@18.3.0)
       '@fontsource/geologica':
         specifier: ^5.1.1
         version: 5.1.1
@@ -41,6 +44,9 @@ importers:
       '@mui/lab':
         specifier: 6.0.0-beta.26
         version: 6.0.0-beta.26(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react@18.3.0))(@mui/material@6.4.3(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react-dom@18.3.0(react@18.3.0))(react@18.3.0))(@types/react@18.3.3)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
+      '@mui/material':
+        specifier: ^6.4.3
+        version: 6.4.3(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@mui/x-data-grid':
         specifier: ^7.26.0
         version: 7.26.0(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react@18.3.0))(@mui/material@6.4.3(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react-dom@18.3.0(react@18.3.0))(react@18.3.0))(@mui/system@6.4.3(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react@18.3.0))(@types/react@18.3.3)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
@@ -243,6 +249,9 @@ importers:
       '@testing-library/react':
         specifier: 16.1.0
         version: 16.1.0(@testing-library/dom@10.4.0)(@types/react-dom@18.3.1)(@types/react@18.3.3)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
+      '@types/lodash':
+        specifier: ^4.17.15
+        version: 4.17.15
       '@types/node':
         specifier: 22.13.1
         version: 22.13.1
@@ -3483,6 +3492,9 @@ packages:
 
   '@types/linkify-it@5.0.0':
     resolution: {integrity: sha512-sVDA58zAw4eWAffKOaQH5/5j3XeayukzDk+ewSsnv3p4yJEZHCCzMDiZM8e0OUrRvmpGZ85jf4yDHkHsgBNr9Q==}
+
+  '@types/lodash@4.17.15':
+    resolution: {integrity: sha512-w/P33JFeySuhN6JLkysYUK2gEmy9kHHFN7E8ro0tkfmlDOgxBDzWEZ/J8cWA+fHqFevpswDTFZnDx+R9lbL6xw==}
 
   '@types/mapbox__point-geometry@0.1.4':
     resolution: {integrity: sha512-mUWlSxAmYLfwnRBmgYV86tgYmMIICX4kza8YnE/eIlywGe2XoOxlpVnXWwir92xRLjwyarqwpu2EJKD2pk0IUA==}
@@ -14816,6 +14828,8 @@ snapshots:
   '@types/less@3.0.8': {}
 
   '@types/linkify-it@5.0.0': {}
+
+  '@types/lodash@4.17.15': {}
 
   '@types/mapbox__point-geometry@0.1.4': {}
 

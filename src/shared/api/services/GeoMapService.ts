@@ -1,8 +1,9 @@
-import { type CancelablePromise } from '@shared/api/core/CancelablePromise';
-import { OpenAPI } from '@shared/api/core/OpenAPI';
-import { getGeoMapParametrUrl } from '@shared/config/mock-dev-only/url';
-import { type IRegionScopeData } from '@shared/api/yuh-client-api/models/RegionScopeData';
+
+import { getGeoMapParametrUrl } from '../../../shared/config/mock-dev-only/url';
+import { CancelablePromise } from '../core/CancelablePromise';
+import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
+import { IRegionScopeData } from '../yuh-client-api/models/RegionScopeData';
 
 type Response = Record<'regions', Record<string, IRegionScopeData>>
 class GeoMapService {

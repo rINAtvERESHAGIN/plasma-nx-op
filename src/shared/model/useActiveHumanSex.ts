@@ -1,7 +1,8 @@
-import { type RootState, useAppSelector } from '@app/store.ts';
+
 import { type AnyAction } from 'redux';
-import { type ThunkAction } from 'redux-thunk';
 import { setHumanSex } from './system-operator';
+import { ThunkAction } from '@reduxjs/toolkit';
+import { useAppSelector, RootState } from 'store-plasma';
 
 /**
  * Кастомный хук для доступа к 'humanSex' из Redux 'systemOperator'.

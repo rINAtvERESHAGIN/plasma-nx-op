@@ -1,8 +1,9 @@
-import { type RootState, useAppSelector } from '@app/store.ts';
+
 import { type AnyAction } from 'redux';
-import { type ThunkAction } from 'redux-thunk';
-import { type Region } from '@shared/api/model/Region';
 import { setRegion } from './system-operator';
+import { Region } from './regions';
+import { ThunkAction } from '@reduxjs/toolkit';
+import { RootState, useAppSelector } from 'store-plasma';
 
 /**
  * Кастомный хук для доступа к 'region' из Redux 'systemOperator'.

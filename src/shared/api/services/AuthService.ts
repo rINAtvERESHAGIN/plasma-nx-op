@@ -1,8 +1,9 @@
-import { type CancelablePromise } from '@shared/api/core/CancelablePromise';
-import { OpenAPI } from '@shared/api/core/OpenAPI';
 import { requestWithStatus, request } from '../core/request';
 import { type ApiResult } from '../core/ApiResult';
-import { type UserProfile } from '@pages/personal-account/model';
+import { UserProfile } from '../../../pages/personal-account/model';
+import { CancelablePromise } from '../core/CancelablePromise';
+import { OpenAPI } from '../core/OpenAPI';
+
 
 class AuthService {
   static requestAuthorization(username: string, password: string): CancelablePromise<ApiResult<unknown>> {

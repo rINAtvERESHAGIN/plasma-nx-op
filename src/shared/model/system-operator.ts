@@ -1,6 +1,7 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import { useAppSelector } from '@app/store.ts';
-import { type Region } from '@shared/api/model/Region';
+import { useAppSelector } from 'store-plasma';
+import { Region } from './regions';
+
 interface IInitialState {
     lab?: number;
     parameter?: number;

@@ -1,7 +1,8 @@
-import { type Parameter } from '@shared/api/model/Parameter';
-import { type CancelablePromise } from '@shared/api/core/CancelablePromise';
-import { OpenAPI } from '@shared/api/core/OpenAPI';
+
+import { CancelablePromise } from '../core/CancelablePromise';
+import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
+import { Parameter } from '../model/Parameter';
 
 class ParametersService {
   static requestParameters (): CancelablePromise<Parameter[]> {

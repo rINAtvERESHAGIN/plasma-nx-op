@@ -1,5 +1,6 @@
-import { type CancelablePromise } from '@shared/api/core/CancelablePromise';
-import { OpenAPI } from '@shared/api/core/OpenAPI';
+
+import { CancelablePromise } from '../core/CancelablePromise';
+import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
 
 class ProcessorsService {
