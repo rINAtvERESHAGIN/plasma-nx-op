@@ -1,7 +1,6 @@
-
 import { ThunkAction } from '@reduxjs/toolkit';
 import { AnyAction } from 'redux';
-import { useAppSelector, RootState } from 'store-plasma';
+import { useAppSelector, RootState } from '@org/store-plasma';
 import { setAgeRange } from './system-operator';
 
 /**
@@ -11,7 +10,7 @@ import { setAgeRange } from './system-operator';
 export const useActiveAgeRange = (): number[] => {
   const ageRange = useAppSelector((state) => state.systemOperator.ageRange);
   if (Array.isArray(ageRange)) {
-    const isArrayOfNumbers = ageRange.every(item => typeof item === 'number');
+    const isArrayOfNumbers = ageRange.every((item) => typeof item === 'number');
     if (isArrayOfNumbers) {
       return ageRange;
     }

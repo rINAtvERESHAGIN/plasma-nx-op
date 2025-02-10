@@ -1,6 +1,6 @@
 import * as ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { store } from 'store-plasma';
+import { store } from '@org/store-plasma';
 import { themeMui } from './app/theme';
 import { ThemeProvider } from '@mui/material';
 import { LocalizationProvider } from '@mui/x-date-pickers';

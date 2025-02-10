@@ -9,3 +9,11 @@ export interface Region {
     name_latin: string;
     iso_code: RegionIsoCode;
 }
+
+export interface IRegion {
+    date: string
+    detector_now: number
+    name: string
+    code: string
+  }
+  

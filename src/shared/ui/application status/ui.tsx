@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { useAppSelector } from 'store-plasma';
+import { useAppSelector } from '@org/store-plasma';
 
 const ApplicationStatus = (): React.ReactNode => {
   const applicationStatus = useAppSelector((state) => state.applicationStatus.status);

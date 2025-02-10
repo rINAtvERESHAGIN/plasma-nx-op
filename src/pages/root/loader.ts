@@ -1,4 +1,4 @@
-import { RootState, store } from 'store-plasma';
+import { RootState, store } from '@org/store-plasma';
 import { coreLoader, mainLoader } from '../map/lib/loader';
 import { setActiveDefaultParameter } from '../../shared/model/useActiveParameter';
 import { ThunkAction } from '@reduxjs/toolkit';
@@ -12,7 +12,6 @@ import { setActiveDefaultHumanSex } from '../../shared/model/useActiveHumanSex';
 import { setActiveDefaultLab } from '../../shared/model/useActiveLab';
 import { setActiveDefaultRegion } from '../../shared/model/useActiveRegion';
 import { setParameters } from '../parameter/model';
-
 
 function extractPageNameFromUrl(url: string): string | null {
   const match = url.match(/\/([^/]+)$/);

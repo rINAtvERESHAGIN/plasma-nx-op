@@ -1,17 +1,17 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import { useAppSelector } from 'store-plasma';
+import { useAppSelector } from '@org/store-plasma';
 import { Region } from './regions';
 
 interface IInitialState {
-    lab?: number;
-    parameter?: number;
-    overviewInformation?: string;
-    date?: string;
-    region?: Region;
-    humanSex?: string;
-    ageRange?: number[];
+  lab?: number;
+  parameter?: number;
+  overviewInformation?: string;
+  date?: string;
+  region?: Region;
+  humanSex?: string;
+  ageRange?: number[];
 }
-type SystemOperator = IInitialState
+type SystemOperator = IInitialState;
 
 const initialState: IInitialState = {
   lab: 0,
@@ -24,7 +24,7 @@ const initialState: IInitialState = {
 };
 
 interface PayloadSetSelectedDateAction {
-    date: string;
+  date: string;
 }
 
 const systemOperatorSlice = createSlice({
@@ -62,7 +62,8 @@ const systemOperatorSlice = createSlice({
   }
 });
 
-export const { setLab, setParameter, setOverviewInformation, setDate, setRegion, setHumanSex, setAgeRange } = systemOperatorSlice.actions;
+export const { setLab, setParameter, setOverviewInformation, setDate, setRegion, setHumanSex, setAgeRange } =
+  systemOperatorSlice.actions;
 export const systemOperatorReducer = systemOperatorSlice.reducer;
 
 /**

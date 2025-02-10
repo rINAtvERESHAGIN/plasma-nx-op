@@ -1,9 +1,0 @@
-{
-  "name": "custom-block",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "custom-block/src",
-  "projectType": "library",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project custom-block --web",
-  "targets": {}
-}
