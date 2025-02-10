@@ -1,7 +1,7 @@
 {
-  "name": "constants",
+  "name": "constants-plasma",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "constants/src",
+  "sourceRoot": "constants-plasma/src",
   "projectType": "library",
   "release": {
     "version": {
@@ -17,10 +17,10 @@
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/constants",
-        "main": "constants/src/index.ts",
-        "tsConfig": "constants/tsconfig.lib.json",
-        "assets": ["constants/*.md"]
+        "outputPath": "dist/constants-plasma",
+        "main": "constants-plasma/src/index.ts",
+        "tsConfig": "constants-plasma/tsconfig.lib.json",
+        "assets": ["constants-plasma/*.md"]
       }
     },
     "nx-release-publish": {

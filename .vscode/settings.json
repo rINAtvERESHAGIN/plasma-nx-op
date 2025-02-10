@@ -1,7 +1,25 @@
 {
-    "npm-scripts.showStartNotification": false,
-    "terminal.integrated.env.osx": {
-        "NVM_DIR": "$HOME/.nvm",
-        "PATH": "$HOME/.nvm/versions/node/$(nvm version)/bin:$PATH"
-      }
+  "npm-scripts.showStartNotification": false,
+  "terminal.integrated.env.osx": {
+    "NVM_DIR": "$HOME/.nvm",
+    "PATH": "$HOME/.nvm/versions/node/$(nvm version)/bin:$PATH"
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/tmp": true,
+    "path/to/other/generated/folder": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/tmp": true,
+    "path/to/other/generated/folder": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/tmp/**": true,
+    "path/to/other/generated/folder/**": true
+  }
 }

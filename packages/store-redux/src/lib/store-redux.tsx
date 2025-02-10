@@ -1,17 +1,34 @@
 import { configureStore, ThunkDispatch } from '@reduxjs/toolkit';
-import { TypedUseSelectorHook, useSelector,useDispatch } from 'react-redux';
-import { applicationStatusReducer, blocknotesReducer, coreDataReducer, finalFormReduxReducer, subHeaderReducer, systemOperatorReducer } from '../slices';
+import { TypedUseSelectorHook, useSelector, useDispatch } from 'react-redux';
+import {
+  applicationStatusReducer,
+  blocknotesReducer,
+  comparisonReducer,
+  coreDataReducer,
+  finalFormReduxReducer,
+  plotlyInteractionReducer,
+  regionBasketReducer,
+  reviewChartReducer,
+  subHeaderReducer,
+  systemOperatorReducer,
+  uiReducer,
+  userInfoSliceReducer
+} from '../slices';
 import { BLOCKNOTES_FEATURE_KEY } from '../slices/blocknote/blocknote.slice';
-
 
 const rootReducer = {
   coreData: coreDataReducer,
   systemOperator: systemOperatorReducer,
-  applicationStatus:applicationStatusReducer,
+  applicationStatus: applicationStatusReducer,
   [BLOCKNOTES_FEATURE_KEY]: blocknotesReducer,
   finalFormRedux: finalFormReduxReducer,
   widgetsServiceSubHeader: subHeaderReducer,
-  
+  comparison: comparisonReducer,
+  reviewChart: reviewChartReducer,
+  regionBasket: regionBasketReducer,
+  userInfo: userInfoSliceReducer,
+  ui: uiReducer,
+  plotlyInteraction: plotlyInteractionReducer
 };
 export const store = configureStore({
   reducer: rootReducer,

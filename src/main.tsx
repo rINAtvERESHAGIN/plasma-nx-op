@@ -1,6 +1,5 @@
 import * as ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { store } from '@org/store-plasma';
 import { themeMui } from './app/theme';
 import { ThemeProvider } from '@mui/material';
 import { LocalizationProvider } from '@mui/x-date-pickers';
@@ -9,6 +8,7 @@ import { ruRU } from '@mui/x-date-pickers/locales';
 import ApplicationStatus from './shared/ui/application status/ui';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './app/router';
+import { store } from '@org/store-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 

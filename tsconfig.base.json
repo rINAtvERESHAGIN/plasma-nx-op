@@ -16,11 +16,11 @@
     "baseUrl": ".",
     "paths": {
       "@org/blocknote": ["packages/blocknote/src/index.ts"],
+      "@org/constants-plasma": ["constants-plasma/src/index.ts"],
       "@org/custom-block": ["packages/custom-block/src/index.ts"],
       "@org/processor-specification": ["packages/processor-specification/src/index.ts"],
-      "@org/store-plasma": ["packages/store-plasma/src/index.ts"],
+      "@org/store-redux": ["packages/store-redux/src/index.ts"],
       "@org/timeline": ["packages/timeline/src/index.ts"],
-      "constants": ["constants/src/index.ts"],
       "types": ["types/src/index.ts"]
     }
   },
