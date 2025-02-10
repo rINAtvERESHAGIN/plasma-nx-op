@@ -1,14 +1,15 @@
-import { useParametersCore } from '@app/core-data-slice/reducer';
-import ParameterCard from '@entities/parameter-card/ui';
+import { useParametersCore } from '@org/store-redux';
+
 import React, { useEffect, useState, useCallback } from 'react';
 import { Grid } from '@mui/material';
-import { type Parameter } from '@shared/api/model/Parameter';
+import { type Parameter } from 'types';
 import { useNavigate } from 'react-router-dom';
 import { CategoryHeader, Container, StyledLink } from './ui.styled';
+import ParameterCard from '../../entities/parameter-card/ui';
 
 type GroupedParameters = Record<string, Parameter[]>;
 
-const ParametersGallery: React.FunctionComponent = () => {
+export const ParametersGallery: React.FunctionComponent = () => {
   const navigate = useNavigate();
   const parameters = useParametersCore();
   const [groupedByCategory, setGroupedByCategory] = useState<GroupedParameters>({});
@@ -67,5 +68,3 @@ const ParametersGallery: React.FunctionComponent = () => {
     </Container>
   );
 };
-
-export default ParametersGallery;

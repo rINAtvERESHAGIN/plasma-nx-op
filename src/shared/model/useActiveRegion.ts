@@ -2,7 +2,7 @@ import { type AnyAction } from 'redux';
 import { setRegion } from './system-operator';
 import { Region } from './regions';
 import { ThunkAction } from '@reduxjs/toolkit';
-import { RootState, useAppSelector } from '@org/store-plasma';
+import { RootState, useAppSelector } from '@org/store-redux';
 
 /**
  * Кастомный хук для доступа к 'region' из Redux 'systemOperator'.

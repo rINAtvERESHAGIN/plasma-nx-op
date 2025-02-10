@@ -1,6 +1,6 @@
 import { ThunkAction } from '@reduxjs/toolkit';
 import { AnyAction } from 'redux';
-import { useAppSelector, RootState } from '@org/store-plasma';
+import { useAppSelector, RootState } from '@org/store-redux';
 import { setAgeRange } from './system-operator';
 
 /**

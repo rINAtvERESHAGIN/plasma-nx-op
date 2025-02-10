@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { Container, HeaderContainer, StyledDialog, ExpandButton } from './ui.styled';
 import { defaultDataIndexes } from './constants';
-import { ChartOfProcessorResult } from '@features/chart-of-processor-result/ui';
+// import { ChartOfProcessorResult } from '@features/chart-of-processor-result/ui';
 import { IndexesInfo, ProInflammatoryIndicatorsTableInfo, chartConfigs } from './block-description';
-import { Card, CardHeader } from '@plasma/ui';
-import InfoTooltip from '@entities/info-icon-with-tooltip/ui';
-import { EpidemiologistMap } from '@features/epidemiologist-map/ui';
-import { ProInflammatoryIndicatorsTable } from '@features/epidemiologist-table/ui';
+// import { Card, CardHeader } from '@plasma/ui';
+// import InfoTooltip from '@entities/info-icon-with-tooltip/ui';
+// import { EpidemiologistMap } from '@features/epidemiologist-map/ui';
+// import { ProInflammatoryIndicatorsTable } from '@features/epidemiologist-table/ui';
 import { type RegionId, type UpdateDataSetHelper } from './type';
 import { isNil } from 'lodash';
-import { ArrowsOutSimple } from '@shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
+// import { ArrowsOutSimple } from '@shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
 import { type PlotData } from 'plotly.js';
 
-const EpidemiologistPage: React.FunctionComponent = () => {
+export const EpidemiologistPage: React.FunctionComponent = () => {
   const [dataIndexes, setDataIndexes] = useState(defaultDataIndexes);
 
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -106,4 +106,3 @@ const EpidemiologistPage: React.FunctionComponent = () => {
     </Container>
   );
 };
-export default EpidemiologistPage;

@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
-import { ErrorLayout } from '@pages/error/ui/ui.styled';
-import { LoadingScreenContainer } from '@shared/ui/styled/loading-container';
 import { Avatar, Typography } from '@mui/material';
-import { type CommponErrorComponentProps } from '../lib/@error-types';
+import { type CommponErrorComponentProps } from "../../../../types/src/lib/CommponErrorComponentProps";
 import { red } from '@mui/material/colors';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
+import { ErrorLayout } from './ui.styled';
+import { LoadingScreenContainer } from '../../../shared/ui/styled/loading-container';
+
 
 function Auth401({ status, data, statusText }: CommponErrorComponentProps): React.ReactNode {
   const navigate = useNavigate();

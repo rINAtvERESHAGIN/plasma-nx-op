@@ -6,9 +6,11 @@ import SuspenseWithFallBack from '../shared/ui/suspense-with-fallback/ui';
 import { lazy } from 'react';
 import { mainLoader } from '../pages/map/lib/loader';
 
-const SplitMainPage = lazy(
-  async () => await import(/* webpackChunkName: 'SplitMainPage' */ '../pages/main-page-split/ui/ui')
-);
+const SplitMainPage = lazy(async () => ({ default: (await import('../pages/main-page-split/ui/ui')).SplitMainPage }));
+const ParametersGallery = lazy(async () => ({ default: (await import('../pages')).ParametersGallery }));
+const ParameterInfo = lazy(async () => ({ default: (await import('../pages')).ParameterInfo }));
+const Review = lazy(async () => ({ default: (await import('../pages')).Review }));
+const DatasetSpecifications = lazy(async () => ({ default: (await import('../pages')).DatasetSpecifications }));
 
 export const router = createBrowserRouter([
   {
@@ -30,7 +32,36 @@ export const router = createBrowserRouter([
           </SuspenseWithFallBack>
         ),
         loader: mainLoader
-      }
+      },
+      {
+        path: 'parameters-gallery',
+        element: (
+          <SuspenseWithFallBack>
+            <ParametersGallery />
+          </SuspenseWithFallBack>
+        )
+      },
+      {
+        path: 'parameterInfo/:parameterId',
+        element: (
+          <SuspenseWithFallBack>
+            <ParameterInfo />
+          </SuspenseWithFallBack>
+        )
+      },
+      {
+        path: 'review',
+        element: (
+          <SuspenseWithFallBack>
+            <Review />
+          </SuspenseWithFallBack>
+        )
+      },
+      {
+        path: 'comparison',
+        element: <DatasetSpecifications />,
+        loader: loaderComparison
+      },
     ]
   }
 ]);

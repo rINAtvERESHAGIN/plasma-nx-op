@@ -1,7 +1,5 @@
+import { AllRegion, Lab, Parameter, Timeline } from "types";
 import MapBoundariesService from "../../../features/mapbox/utils/loader";
-import { AllRegion } from "../../../../types/src/lib/AllRegion";
-import { Lab } from "../../../../types/src/lib/Lab";
-import { Parameter } from "../../../../types/src/lib/Parameter";
 import LabsService from "../../../shared/api/services/LabsService";
 import ParametersService from "../../../shared/api/services/ParameterService";
 import ProcessorsService from "../../../shared/api/services/ProcessorsService";

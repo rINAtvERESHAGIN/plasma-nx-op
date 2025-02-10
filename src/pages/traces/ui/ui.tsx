@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-
-import { useAppDispatch, useAppSelector } from '@app/store';
-import { type DatasetSpecification } from '@shared/api/model/Comparison';
+import { useAppDispatch, useAppSelector } from '@org/store-redux';
+import { type DatasetSpecification } from 'types';
 import {
   CardHeader,
   ContentContainer,
@@ -11,29 +10,29 @@ import {
   RootContainer,
   CenteredElement,
   ScrollableContainer
-} from '@pages/traces/ui/ui.styled';
-import { CardHeaderAction, StackedCard, StackedCardsContainer } from '@shared/ui/animation-card/ui';
-import DatasetSpecificationsUploadButton from '@entities/trace-upload-button/ui';
+} from './ui.styled';
+import { CardHeaderAction, StackedCard, StackedCardsContainer } from '../../../shared/ui/animation-card/ui';
+import DatasetSpecificationsUploadButton from '../../../entities/trace-upload-button/ui';
 import { IconButton, Snackbar } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
-import DatasetSpecificationClearAllBth from '@entities/trace-clear-all-btn/ui';
+import DatasetSpecificationClearAllBth from '../../../entities/trace-clear-all-btn/ui';
 import { useSnackbar } from 'notistack';
-import ThreeDotLoadingStatus from '@shared/ui/three-dots-loading-status/ui';
-import CustomAlert from '@shared/ui/custom-alert/ui';
+import ThreeDotLoadingStatus from '../../../shared/ui/three-dots-loading-status/ui';
+import CustomAlert from '../../../shared/ui/custom-alert/ui';
 import { setComparisonChart } from '../model';
-import WidgetDrawer from '@widgets/drawer/ui';
-import SubHeaderRoot from '@widgets/sub-header/ui';
-import ComparisonAddBtn from '@entities/trace-add-btn/ui';
-import { showSubHeader } from '@widgets/sub-header/model';
-import DatasetSpecificationChart from '@entities/dataset-specification-chart/ui';
-import DatasetSpecificationInfo from '@entities/comparison-selected-status/ui';
-import DatasetSpecificationUpdatePlot from '@entities/trace-update-plot/ui';
-import DatasetSpecificationsService from '@shared/api/services/DatasetSpecificationsService';
+import WidgetDrawer from '../../../widgets/drawer/ui';
+import SubHeaderRoot from '../../../widgets/sub-header/ui';
+import ComparisonAddBtn from '../../../entities/trace-add-btn/ui';
+import { showSubHeader } from '../../../widgets/sub-header/model';
+import DatasetSpecificationChart from '../../../entities/dataset-specification-chart/ui';
+import DatasetSpecificationInfo from '../../../entities/comparison-selected-status/ui';
+import DatasetSpecificationUpdatePlot from '../../../entities/trace-update-plot/ui';
+import DatasetSpecificationsService from '../../../shared/api/services/DatasetSpecificationsService';
 import { DatasetSpecificationForm } from 'dataset-specification-form/entities/dataset-specification-form.ui';
-import { type DatasetSpecificationStatus } from '../../../../packages/dataset-specification-form/src/shared/types/DatasetSpecificationStatus';
+import { DatasetSpecificationStatus } from 'types';
 
-const DatasetSpecifications = (): React.ReactNode => {
+export const DatasetSpecifications = (): React.ReactNode => {
   const dispatch = useAppDispatch();
   const { enqueueSnackbar } = useSnackbar();
 
@@ -276,4 +275,4 @@ const DatasetSpecifications = (): React.ReactNode => {
     </RootContainer>
   );
 };
-export default DatasetSpecifications;
+

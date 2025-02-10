@@ -12,12 +12,13 @@ import {
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import LoadingScreen from '../../entities/loading-screen/ui';
 import { isNil } from 'lodash';
-import { useAppDispatch, useAppSelector } from '@org/store-plasma';
+
 import GeoMapService from '../../shared/api/services/GeoMapService';
 import { AppLogo } from '../../shared/assets/images/app-logo/AppLogo';
 import { AppTitle } from '../../shared/assets/images/app-title/AppLogo';
 import { Navbar } from '../globe-map/ui/ui.styled';
 import { updateDocument } from './model';
+import { useAppDispatch, useAppSelector } from '@org/store-redux';
 
 const PLASMA_VERSION_APP = '121';
 

@@ -1,5 +1,6 @@
+import { useAppSelector } from '@org/store-redux';
 import React from 'react';
-import { useAppSelector } from '@org/store-plasma';
+
 
 const ApplicationStatus = (): React.ReactNode => {
   const applicationStatus = useAppSelector((state) => state.applicationStatus.status);

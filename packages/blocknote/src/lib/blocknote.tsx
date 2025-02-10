@@ -2,7 +2,7 @@ import { BlockNoteView } from '@blocknote/mantine';
 import styled from 'styled-components';
 import { useCreateBlockNote } from '@blocknote/react';
 import '@blocknote/mantine/style.css';
-import { useAppSelector } from '@org/store-plasma';
+import { useAppSelector } from '@org/store-redux';
 
 const StyledBlocknote = styled.div`
   height: 100vh;

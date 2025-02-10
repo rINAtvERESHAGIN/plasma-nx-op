@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, type CardProps, Typography, CardActionArea, type CardActionAreaProps } from '@mui/material';
-import { type Parameter } from '@shared/api/model/Parameter';
+import { type Parameter } from 'types';
 
 interface IProps<DataType> extends CardProps {
   item: Parameter;

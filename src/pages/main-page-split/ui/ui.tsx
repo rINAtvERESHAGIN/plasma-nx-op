@@ -1,46 +1,45 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { type IRegionData } from '@shared/api/yuh-client-api/models/RegionData.ts';
-import { useAppDispatch, useAppSelector } from '@app/store.ts';
+import { type IRegionData } from 'types';
+import { useAppDispatch, useAppSelector } from '@org/store-redux';
 import { Typography } from '@mui/material';
-import ChartAgeValueRelationship from '@features/chart-age-value-relationship/ui.tsx';
-import ChartWeekValueRelationship from '@features/chart-week-value-relationship/ui.tsx';
-import ChartStlDecompose from '@features/chart-stl-decompose/ui.tsx';
-import { StatsAgeSexPyramidPlotly } from '@features/stats-age-sex-pyramid/ui.tsx';
-import StatsPopulationPlotly from '@features/stats-population/ui.tsx';
-import StatsBirthsDeathsPlotly from '@features/stats-births-deaths/ui.tsx';
-import StatsCoronaPlotly from '@features/stats-corona/ui.tsx';
 import '@shared/styles/scroll.css';
-import CustomEditor from '@features/draft-split-central-panel-editor/ui';
+import { animated, useSpring } from 'react-spring';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Divider from '@mui/material/Divider';
+import ChartAgeValueRelationship from '../../../features/chart-age-value-relationship/ui';
+import MapBox from '../../../features/mapbox/ui/ui.js';
+import WordStat from '../../../features/plotly-wordstat/ui/ui.js';
+import ReflexControlsDemo from '../../../features/split-container/ReflexControlsDemo.js';
 import {
   CloseButton,
   MainContainer,
+  PanelHeaderContainer,
   PlotlyContainer,
   SettingsContainer,
-  PanelHeaderContainer,
   TimeLineBox
-} from '@pages/main-page-split/ui/ui.styled';
-import MapBox from '@features/mapbox/ui/ui.tsx';
-import WidgetTabs from '@widgets/tabs/ui.tsx';
-import ReflexControlsDemo from '@features/split-container/ReflexControlsDemo.tsx';
-import RegionService from '@shared/api/services/RegionService.ts';
-import { setRegions } from '@shared/model/regions.ts';
-import { animated, useSpring } from 'react-spring';
-import SwitchButton from '@shared/ui/switch/ui.tsx';
-import GlobalCohortSettings from '@features/global-cohort-settings/ui';
-
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { setOpenSettings, setOpenTimeLine, set3dLayerEnabled } from '@pages/main-page-split/model';
-import Divider from '@mui/material/Divider';
-import SettingsDock from '@features/main-page-settings-dock/ui';
-import { useActiveRegion } from '@shared/model/useActiveRegion';
-import { useActiveParameter } from '@shared/model/useActiveParameter';
-import { useParametersCore } from '@app/core-data-slice/reducer';
-import TimelineTools from 'timeline/features/timeline-tools/timeline-tools.ui';
-import WordStat from '@features/plotly-wordstat/ui/ui';
+} from './ui.styled';
+import { useParametersCore } from 'packages/store-redux/src/slices/core-data/core-data.slice';
+import { useActiveParameter } from '../../../shared/model/useActiveParameter';
+import { useActiveRegion } from '../../../shared/model/useActiveRegion';
+import { set3dLayerEnabled, setOpenSettings, setOpenTimeLine } from '../model';
+import ChartStlDecompose from '../../../features/chart-stl-decompose/ui';
+import ChartWeekValueRelationship from '../../../features/chart-week-value-relationship/ui';
+import CustomEditor from '../../../features/draft-split-central-panel-editor/ui';
+import RegionService from '../../../shared/api/services/RegionService';
+import WidgetTabs from '../../../widgets/tabs/ui';
+import SettingsDock from '../../../features/main-page-settings-dock/ui';
+import { StatsAgeSexPyramidPlotly } from '../../../features/stats-age-sex-pyramid/ui';
+import StatsBirthsDeathsPlotly from '../../../features/stats-births-deaths/ui';
+import StatsCoronaPlotly from '../../../features/stats-corona/ui';
+import StatsPopulationPlotly from '../../../features/stats-population/ui';
+import SwitchButton from '../../../shared/ui/switch/ui';
+import GlobalCohortSettings from '../../../features/global-cohort-settings/ui';
+import { setRegions } from '../../../shared/model/regions';
+import { TimelineTools } from '@org/timeline';
 
 const SettingsContainerAnimated = animated(SettingsContainer);
 
-const SplitMainPage = (): React.ReactNode => {
+export const SplitMainPage = (): React.ReactNode => {
   const data = useAppSelector((state) => state.document.data);
   const dispatch = useAppDispatch();
   const parameters = useParametersCore();
@@ -218,5 +217,3 @@ const SplitMainPage = (): React.ReactNode => {
     </MainContainer>
   );
 };
-
-export default SplitMainPage;

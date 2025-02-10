@@ -1,9 +1,9 @@
 import React from 'react';
 import CloseIcon from '@mui/icons-material/Close';
-
 import { Avatar, Typography } from '@mui/material';
-import { LoadingScreenContainer } from '@shared/ui/styled/loading-container';
 import { ErrorLayout } from '../ui.styled';
+import { LoadingScreenContainer } from '../../../../shared/ui/styled/loading-container';
+
 
 function Error504 (): React.ReactNode {
   return (

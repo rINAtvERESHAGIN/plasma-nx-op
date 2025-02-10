@@ -15,6 +15,7 @@ import {
   userInfoSliceReducer
 } from '../slices';
 import { BLOCKNOTES_FEATURE_KEY } from '../slices/blocknote/blocknote.slice';
+import { documentReducer } from '../slices/root-document/root-document.slice';
 
 const rootReducer = {
   coreData: coreDataReducer,
@@ -26,6 +27,7 @@ const rootReducer = {
   comparison: comparisonReducer,
   reviewChart: reviewChartReducer,
   regionBasket: regionBasketReducer,
+  document: documentReducer,
   userInfo: userInfoSliceReducer,
   ui: uiReducer,
   plotlyInteraction: plotlyInteractionReducer

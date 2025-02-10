@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import LabSelector from '@features/lab-selector/ui';
-import ParameterSelector from '@features/parameter-selector/ui';
-import OverviewInformationSelector from '@features/overview-information-selector/ui';
-import SettingsAgeRangeSlider from '@features/settings-age-range-slider/ui';
-import GenderRadioGroup from '@features/gender-radio-group/ui';
 import { Container, AdditionalSelectorsContainer } from './ui.styled';
+import GenderRadioGroup from '../gender-radio-group/ui';
+import LabSelector from '../lab-selector/ui';
+import OverviewInformationSelector from '../overview-information-selector/ui';
+import ParameterSelector from '../parameter-selector/ui';
+import SettingsAgeRangeSlider from '../settings-age-range-slider/ui';
 
 function GlobalCohortSettings(): React.ReactNode {
   const accordionRef = useRef(null);

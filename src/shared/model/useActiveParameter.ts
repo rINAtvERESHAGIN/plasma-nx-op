@@ -1,7 +1,7 @@
 import { type AnyAction } from 'redux';
 import { setParameter } from './system-operator';
 import { ThunkAction } from '@reduxjs/toolkit';
-import { useAppSelector, RootState } from '@org/store-plasma';
+import { useAppSelector, RootState } from '@org/store-redux';
 
 /**
  * Кастомный хук для доступа к 'parameter' из Redux 'systemOperator'.

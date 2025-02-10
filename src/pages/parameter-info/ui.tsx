@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ParameterCard from '../../entities/parameter-card/ui';
-import { useParametersCore } from '@app/core-data-slice/reducer';
-import { Container } from '@pages/epidemiologist-page/ui.styled';
 import { createDatasetSpecification } from './utils';
 import { CardContainer } from './ui.styled';
+import { useParametersCore } from '@org/store-redux';
+import { EpidemiologistContainer } from '../epidemiologist-page';
 
-const ParameterInfo = (): React.ReactNode => {
+export const ParameterInfo = (): React.ReactNode => {
   const { parameterId } = useParams();
   const parameters = useParametersCore();
 
@@ -24,7 +24,7 @@ const ParameterInfo = (): React.ReactNode => {
       <CardContainer>
         <ParameterCard item={selectedParameter} />
       </CardContainer>
-      <Container id="image-wrapper">
+      <EpidemiologistContainer id="image-wrapper">
         {/* <ChartContainer>
           <Portal chartUrl='' initialData={datasetSpecification.STL} expandState='full' />
         </ChartContainer>
@@ -34,9 +34,8 @@ const ParameterInfo = (): React.ReactNode => {
         <ChartContainer>
           <Portal chartUrl='' initialData={datasetSpecification.AgeValue} expandState='full' />
         </ChartContainer> */}
-      </Container>
+      </EpidemiologistContainer>
     </>
   );
 };
 
-export default ParameterInfo;

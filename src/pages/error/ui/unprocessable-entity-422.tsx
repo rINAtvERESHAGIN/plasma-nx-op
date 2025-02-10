@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { ErrorLayout } from '@pages/error/ui/ui.styled';
-import { type CommponErrorComponentProps, type HttpErrorsCodes } from '@pages/error/lib/@error-types';
 import { useNavigate } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 import { Avatar, Link, Typography } from '@mui/material';
-import { LoadingScreenContainer } from '@shared/ui/styled/loading-container';
+import { CommponErrorComponentProps, HttpErrorsCodes } from "types";
+import { ErrorLayout } from './ui.styled';
+import { LoadingScreenContainer } from '../../../shared/ui/styled/loading-container';
 
 function UnprocessableEntity422 ({ status }: CommponErrorComponentProps): React.ReactNode {
   const navigate = useNavigate();

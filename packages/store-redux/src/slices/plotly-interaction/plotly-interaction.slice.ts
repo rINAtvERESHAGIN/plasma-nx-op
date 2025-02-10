@@ -1,6 +1,5 @@
-import { useAppDispatch, useAppSelector } from '../../lib/store-plasma';
+import { useAppDispatch, useAppSelector } from '../../lib/store-redux';
 import { type PayloadAction, createSlice } from '@reduxjs/toolkit';
-
 import { type Datum } from 'plotly.js';
 
 interface InitialState {
