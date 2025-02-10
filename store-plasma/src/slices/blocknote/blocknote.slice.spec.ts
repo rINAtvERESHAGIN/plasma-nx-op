@@ -2,7 +2,7 @@ import {
   fetchBlocknotes,
   blocknotesAdapter,
   blocknotesReducer,
-} from './blocknote.slice';
+} from '../blocknote.slice';
 
 describe('blocknotes reducer', () => {
   it('should handle initial state', () => {

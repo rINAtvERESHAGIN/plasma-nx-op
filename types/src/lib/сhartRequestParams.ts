@@ -1,4 +1,4 @@
-import { type Region } from '@shared/api/model/Region';
+import { type Region } from './Region';
 
 export interface IChartRequestParams {
     region: { 

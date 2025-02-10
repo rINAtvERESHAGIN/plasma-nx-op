@@ -19,7 +19,7 @@ import { AppTitle } from '../../shared/assets/images/app-title/AppLogo';
 import { Navbar } from '../globe-map/ui/ui.styled';
 import { updateDocument } from './model';
 
-const PLASMA_VERSION_APP = process.env.PLASMA_VERSION_APP;
+const PLASMA_VERSION_APP = '121';
 
 export const Root = (): React.ReactNode => {
   const navigate = useNavigate();

@@ -1,6 +1,6 @@
 import { configureStore, ThunkDispatch } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useSelector } from 'react-redux';
-import { BLOCKNOTES_FEATURE_KEY, blocknotesReducer } from '../slices/blocknote.slice';
+import { BLOCKNOTES_FEATURE_KEY, blocknotesReducer } from '../slices/blocknote/blocknote.slice';
 
 const rootReducer = {
   [BLOCKNOTES_FEATURE_KEY]: blocknotesReducer 

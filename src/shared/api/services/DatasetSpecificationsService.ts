@@ -1,5 +1,5 @@
 import { type CancelablePromise } from '../core/CancelablePromise';
-import { type DatasetSpecification } from '../model/Comparison';
+import { type DatasetSpecification } from '../../../../types/src/lib/Comparison';
 import { request as __request } from '../core/request';
 import { OpenAPI } from '../core/OpenAPI';
 
