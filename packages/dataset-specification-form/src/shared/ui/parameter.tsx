@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { getAutoCompleteViewParameters } from '@features/trace-form/lib/getSelectViewParameters';
+import { getAutoCompleteViewParameters } from '../../trace-form/lib/getSelectViewParameters';
 import { type AutocompleteData, Autocomplete } from 'mui-rff';
 import { useEffect, useState } from 'react';
-import { useParametersCore } from '@app/core-data-slice/reducer';
+import { useParametersCore } from '@org/store-redux';
 import { isNil } from 'lodash';
 
 const ParameterDatasetSpecification: React.FunctionComponent = ({ form }) => {

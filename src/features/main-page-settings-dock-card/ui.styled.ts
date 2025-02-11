@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { animated } from '@react-spring/web';
+import { animated } from 'react-spring';
 
 export const DockCardContainer = styled.div`
 display: flex;

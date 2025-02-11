@@ -1,5 +1,5 @@
-import { useRegionsCore } from '@app/core-data-slice/reducer';
-import { getAutocompleteViewRegions } from '@features/trace-form/lib/getSelectViewParameters';
+import { useRegionsCore } from '@org/store-redux';
+import { getAutocompleteViewRegions } from '../../trace-form/lib/getSelectViewParameters';
 import { isNil } from 'lodash';
 import { Autocomplete, type AutocompleteData } from 'mui-rff';
 import React, { useEffect, useState } from 'react';

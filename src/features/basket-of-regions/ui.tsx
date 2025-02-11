@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAppDispatch, useAppSelector } from '@org/store-redux';
+import { clearRegionBasket, removeRegionId, useAppDispatch, useAppSelector } from '@org/store-redux';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -7,7 +7,6 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { Button } from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
-import { clearRegionBasket, removeRegionId } from '@features/mapbox/ui/model';
 import Divider from '@mui/material/Divider';
 import {
   ButtonBox,
@@ -16,7 +15,7 @@ import {
   StyledButton,
   StyledDrawer,
   StyledDrawerBox
-} from '@features/basket-of-regions/ui.styled';
+} from '../basket-of-regions/ui.styled';
 
 type Anchor = 'right';
 

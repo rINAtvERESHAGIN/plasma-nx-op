@@ -1,8 +1,8 @@
 import React from 'react';
-import FloatingButtonWithPopover from '@entities/floating-action-button-with-popover/ui/ui.tsx';
+import FloatingButtonWithPopover from '../../floating-action-button-with-popover/ui/ui.tsx';
 import SwitchIconButton from '@shared/ui/switch-icon/ui.tsx';
 import { useAppDispatch, useAppSelector } from '@org/store-redux.ts';
-import { Container, IconButtonContainer } from '@features/main-page-settings-buttons/ui/ui.styled';
+import { Container, IconButtonContainer } from '../../main-page-settings-buttons/ui/ui.styled';
 import { setOpenSettings, setOpenTimeLine } from '@pages/main-page-split/model';
 
 const SettingButtons = () => {

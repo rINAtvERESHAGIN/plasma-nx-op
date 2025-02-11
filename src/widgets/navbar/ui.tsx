@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { MenuButton, MenuIconButton, User } from '@plasma/ui';
-import { MenuButtonWithPanel } from '@features/menu-button-with-panel/ui';
+import { MenuButtonWithPanel } from '../../menu-button-with-panel/ui';
 import { ButtonsContainer } from './ui.styled';
 import { freeAnalysisMenuItems } from './constants';
 

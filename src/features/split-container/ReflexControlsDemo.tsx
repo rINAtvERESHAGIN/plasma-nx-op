@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ReflexContainer, ReflexElement, type ReflexElementProps, ReflexSplitter } from 'react-reflex';
 import 'react-reflex/styles.css';
-import '@shared/styles/scroll.css';
+import '../../shared/styles/scroll.css';
 import './styles.css';
 import { FirstPanelContainer, PanelCloseButton, SecondCenterContainer, ThirdCenterContainer } from './ui.styled';
 

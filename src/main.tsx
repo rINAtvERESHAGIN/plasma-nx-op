@@ -13,12 +13,13 @@ import { store } from '@org/store-redux';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
-
     <ThemeProvider theme={themeMui}>
+      <LocalizationProvider dateAdapter={AdapterDateFns} localeText={ruRU}>
       <Provider store={store}>
         <ApplicationStatus />
         <RouterProvider router={router} />
       </Provider>
+      </LocalizationProvider>
     </ThemeProvider>
 
 );

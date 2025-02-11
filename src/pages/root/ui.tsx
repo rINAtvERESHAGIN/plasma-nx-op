@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 import {
   HeaderSignature,
   Container,
@@ -12,7 +11,6 @@ import {
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import LoadingScreen from '../../entities/loading-screen/ui';
 import { isNil } from 'lodash';
-
 import GeoMapService from '../../shared/api/services/GeoMapService';
 import { AppLogo } from '../../shared/assets/images/app-logo/AppLogo';
 import { AppTitle } from '../../shared/assets/images/app-title/AppLogo';

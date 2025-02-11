@@ -9,13 +9,13 @@ import {
   Slider,
   Tooltip,
 } from '@mui/material';
-import useLongPress from 'shared/api/hooks/useLongPress';
+import {useLongPress} from '../../shared/api/hooks/useLongPress';
 import { debounce } from 'lodash';
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
-import { type TimelineSettings } from 'shared/api/types/TimelineSettings';
+import { type TimelineSettings } from 'types';
 import { Container, HorizontalCollapse, PlayerContainer } from './timeline-player.styled';
-import { type IntRange } from 'shared/constants/month-gradients';
+import { type IntRange } from 'types';
 
 interface IProps {
   setTimelineSetting: React.Dispatch<React.SetStateAction<TimelineSettings>>;

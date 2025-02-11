@@ -3,10 +3,10 @@ import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import { type SelectChangeEvent } from '@mui/material/Select';
 import { useAppDispatch } from '@org/store-redux';
-import Selector from '@shared/ui/selector/ui';
-import { setMenuProps } from '@shared/ui/selector/styles';
-import { menuItemsOverviewInformation } from '@features/overview-information-selector/lib/constants';
-import { setOverviewInformation, useOverviewInformation } from '@shared/model/system-operator';
+import Selector from '../../shared/ui/selector/ui';
+import { setMenuProps } from '../../shared/ui/selector/styles';
+import { setOverviewInformation, useOverviewInformation } from '../../shared/model/system-operator';
+import { menuItemsOverviewInformation } from './lib/constants';
 
 const OverviewInformationSelector = (): React.ReactNode => {
   const dispatch = useAppDispatch();

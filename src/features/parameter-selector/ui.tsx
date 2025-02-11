@@ -4,13 +4,13 @@ import FormControl from '@mui/material/FormControl';
 import { type SelectProps } from '@mui/material/Select';
 import { useAppDispatch } from '@org/store-redux';
 import { useEffect } from 'react';
-import { setParameter } from '@shared/model/system-operator';
-import { useActiveParameter } from '@shared/model/useActiveParameter';
-import { setMenuProps } from '@shared/ui/selector/styles';
-import Selector, { type ISelectorDate } from '@shared/ui/selector/ui';
+import { setParameter } from '../../shared/model/system-operator';
+import { useActiveParameter } from '../../shared/model/useActiveParameter';
+import { setMenuProps } from '../../shared/ui/selector/styles';
+import Selector, { type ISelectorDate } from '../../shared/ui/selector/ui';
 import { updateComparison } from '@org/store-redux'
-import { useParametersCore } from '@app/core-data-slice/reducer';
-import { type Parameter } from '@shared/api/model/Parameter';
+import { useParametersCore } from '@org/store-redux';
+import { type Parameter } from 'types';
 
 const getParameterMenuItems = (parameters: Parameter[]): ISelectorDate[] =>
   parameters.map((value) => ({

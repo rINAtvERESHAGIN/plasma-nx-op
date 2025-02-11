@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useRegionsCore } from '@app/core-data-slice/reducer';
+import { useRegionsCore } from '@org/store-redux';
 import { TableFilter, ArrowsDownUpIcon, OvalLabel, Table } from '@plasma/ui';
 import { TableFilterContainer, TableContainer } from './ui.styled';
-import { getAutocompleteViewRegions } from '@features/trace-form/lib/getSelectViewParameters';
+import { getAutocompleteViewRegions } from '../../trace-form/lib/getSelectViewParameters';
 import { isNil } from 'lodash';
 import {
   type SortingState,

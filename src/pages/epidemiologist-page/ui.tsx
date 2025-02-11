@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Container, HeaderContainer, StyledDialog, ExpandButton } from './ui.styled';
 import { defaultDataIndexes } from './constants';
-// import { ChartOfProcessorResult } from '@features/chart-of-processor-result/ui';
+// import { ChartOfProcessorResult } from '../../chart-of-processor-result/ui';
 import { IndexesInfo, ProInflammatoryIndicatorsTableInfo, chartConfigs } from './block-description';
 // import { Card, CardHeader } from '@plasma/ui';
-// import InfoTooltip from '@entities/info-icon-with-tooltip/ui';
-// import { EpidemiologistMap } from '@features/epidemiologist-map/ui';
-// import { ProInflammatoryIndicatorsTable } from '@features/epidemiologist-table/ui';
+// import InfoTooltip from '../../info-icon-with-tooltip/ui';
+// import { EpidemiologistMap } from '../../epidemiologist-map/ui';
+// import { ProInflammatoryIndicatorsTable } from '../../epidemiologist-table/ui';
 import { type RegionId, type UpdateDataSetHelper } from './type';
 import { isNil } from 'lodash';
 // import { ArrowsOutSimple } from '@shared/draft-icons/arrows-out-simple/ArrowsOutSimple';

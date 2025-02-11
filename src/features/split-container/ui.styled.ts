@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import '@shared/styles/scroll.css';
+import '../../shared/styles/scroll.css';
 
 export const SecondCenterContainer = styled.div`
     width: 100%;

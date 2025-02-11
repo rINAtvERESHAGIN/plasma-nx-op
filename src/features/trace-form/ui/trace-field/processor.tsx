@@ -1,6 +1,6 @@
-import { useProcessorsCore } from '@app/core-data-slice/reducer';
-import ProcessorParamsForm from '@features/processor-params-form/ui';
-import { getSelectViewProcessors } from '@features/trace-form/lib/getSelectViewParameters';
+import { useProcessorsCore } from '@org/store-redux';
+import ProcessorParamsForm from '../../processor-params-form/ui';
+import { getSelectViewProcessors } from '../../trace-form/lib/getSelectViewParameters';
 import { Select, type SelectData } from 'mui-rff';
 import { useEffect, useState } from 'react';
 import * as React from 'react';

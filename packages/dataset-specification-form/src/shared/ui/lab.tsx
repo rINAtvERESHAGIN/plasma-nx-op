@@ -1,5 +1,5 @@
-import { useLabsCore } from '@app/core-data-slice/reducer';
-import { getSelectViewLabs } from '@features/trace-form/lib/getSelectViewParameters';
+import { useLabsCore } from '@org/store-redux';
+import { getSelectViewLabs } from '../../trace-form/lib/getSelectViewParameters';
 import { Select, type SelectData } from 'mui-rff';
 import { useEffect, useState } from 'react';
 import * as React from 'react';

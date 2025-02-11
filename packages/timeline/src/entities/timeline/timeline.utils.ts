@@ -1,5 +1,6 @@
+import { monthGradients } from '@org/constants-plasma';
 import { IntRange, type Timeline as TimelineType } from 'types';
-import {  monthGradients } from 'constants-plasma';
+
 
 export const getSeasonColor = (date: Date): string => {
   const month = date.getMonth() as IntRange<0, 12>;

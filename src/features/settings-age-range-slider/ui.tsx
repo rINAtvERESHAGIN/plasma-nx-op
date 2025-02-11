@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import RangeSlider from '@shared/ui/range-slider/ui';
+import RangeSlider from '../../shared/ui/range-slider/ui';
 import { useAppDispatch } from '@org/store-redux';
-import useDebounce from '@entities/timeline-geo-map-slider/use-debounce';
 import { Typography } from '@mui/material';
-import { setAgeRange } from '@shared/model/system-operator';
-
+import { setAgeRange } from '../../shared/model/system-operator';
 import Box from '@mui/material/Box';
-import { useActiveAgeRange } from '@shared/model/useActiveAgeRange';
+import { useActiveAgeRange } from '../../shared/model/useActiveAgeRange';
+import useDebounce from '../../entities/timeline-geo-map-slider/use-debounce';
 
 
 const SettingsAgeRangeSlider: React.FC = ( ) => {

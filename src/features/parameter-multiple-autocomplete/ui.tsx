@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { useParametersCore } from '@app/core-data-slice/reducer';
-import { getSelectViewParameters } from '@features/trace-form/lib/getSelectViewParameters';
+import { useParametersCore } from '@org/store-redux';
+import { getSelectViewParameters } from '../../trace-form/lib/getSelectViewParameters';
 import { isEqual, isNil } from 'lodash';
 import { type AutocompleteChange, type ParameterAutocompleteProps, type ParameterOption } from './types';
 import { CustomAutocomplete } from '@shared/ui/story-autocomplete/ui';

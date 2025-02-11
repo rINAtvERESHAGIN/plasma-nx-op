@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAppSelector } from '@org/store-redux';
 import Box from '@mui/material/Box';
 import SingleDatasetService from '@shared/api/services/SingleDatasetService';
-import DatasetSpecificationChart from '@entities/dataset-specification-chart/ui';
+import DatasetSpecificationChart from '../../dataset-specification-chart/ui';
 import { CenteredElement } from '@pages/traces/ui/ui.styled';
 import { Skeleton } from '@mui/material';
 import { useActiveRegion } from '@shared/model/useActiveRegion';

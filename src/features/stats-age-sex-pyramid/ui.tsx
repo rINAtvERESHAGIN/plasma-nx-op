@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
-import DatasetSpecificationChart from '@entities/dataset-specification-chart/ui';
-import { CenteredElement } from '@pages/traces/ui/ui.styled';
-import { request as __request } from '@shared/api/core/request';
-import { OpenAPI } from '@shared/api/core/OpenAPI';
+import DatasetSpecificationChart from '../../entities/dataset-specification-chart/ui';
+import { CenteredElement } from '../../pages/traces/ui/ui.styled';
+import { request as __request } from '../../shared/api/core/request';
+import { OpenAPI } from '../../shared/api/core/OpenAPI';
 import { Skeleton } from '@mui/material';
-import { useActiveRegion } from '@shared/model/useActiveRegion';
-import { useRegionsCore } from '@app/core-data-slice/reducer';
-import { withConnectPlot } from '@shared/ui/plotly-interaction/with-diagram';
+import { useRegionsCore } from '@org/store-redux';
+import { withConnectPlot } from '../../shared/ui/plotly-interaction/with-diagram';
+import { useActiveRegion } from '../../shared/model/useActiveRegion';
 
 const PlotlyInteraction = withConnectPlot(DatasetSpecificationChart);
 

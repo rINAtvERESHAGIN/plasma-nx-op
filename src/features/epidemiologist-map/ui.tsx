@@ -4,7 +4,7 @@ import Map, { Layer, Source } from 'react-map-gl';
 import { borderLayer, dataLayer } from './utils/map-styles';
 import { useRouteLoaderData } from 'react-router';
 import { updatePercentiles, createMarkerFeatures, updateFeaturesWithMarkers } from './utils/utils';
-import { MapTooltip } from '@entities/map-tooltip/ui';
+import { MapTooltip } from '../../map-tooltip/ui';
 import rgStat from './multi_led_for_map.json';
 import anomalyArea from './images-of-areas/anomalyArea.png';
 import markersData from './images-of-areas/region_markers.json';

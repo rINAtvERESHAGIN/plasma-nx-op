@@ -50,6 +50,7 @@ export const rootLoader: LoaderFunction = async ({ request }) => {
     })
     .catch((error) => {
       const errorMessage = JSON.parse(JSON.stringify(error));
+      console.error(error)
       throw new Response(JSON.stringify({ afterAuth: extractPageNameFromUrl(request.url) ?? 'main' }), {
         status: errorMessage.status,
         statusText: { afterAuth: extractPageNameFromUrl(request.url) }

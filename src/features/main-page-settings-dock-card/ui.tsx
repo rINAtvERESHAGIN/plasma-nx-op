@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { useIsomorphicLayoutEffect, useSpringValue } from '@react-spring/web';
 import { useWindowResize } from '../../shared/api/hooks/use-window-resize';
 import { useDock } from '../../entities/main-page-settings-dock/dock-context';
 import { DockDot, DockCardButton, DockCardContainer } from './ui.styled';
+import { useIsomorphicLayoutEffect, useSpringValue } from 'react-spring';
 
 const INITIAL_WIDTH = 48;
 

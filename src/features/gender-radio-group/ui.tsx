@@ -1,9 +1,9 @@
 import React from 'react';
 import { useAppDispatch } from '@org/store-redux';
-import { setHumanSex } from '@shared/model/system-operator';
-import RadioButtonsGroup from '@shared/ui/radio-group/ui';
+import { setHumanSex } from '../../shared/model/system-operator';
+import RadioButtonsGroup from '../../shared/ui/radio-group/ui';
 import Box from '@mui/material/Box';
-import { useActiveHumanSex } from '@shared/model/useActiveHumanSex';
+import { useActiveHumanSex } from '../../shared/model/useActiveHumanSex';
 
 const radioOptions = [
   { label: 'Муж', value: '0' },

@@ -17,7 +17,7 @@ import { useAppDispatch, useAppSelector } from '@org/store-redux';
 import GeoMapService from '@shared/api/services/GeoMapService';
 import { updateDocument } from '@pages/root/model';
 import { OutletContainer } from '@pages/root/ui.styled';
-import LoadingScreen from '@entities/loading-screen/ui';
+import LoadingScreen from '../../loading-screen/ui';
 import { styled as muiStyled } from '@mui/material/styles';
 import { grey } from '@mui/material/colors';
 

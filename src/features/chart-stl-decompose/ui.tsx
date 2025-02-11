@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import SingleDatasetService from '@shared/api/services/SingleDatasetService';
-import DatasetSpecificationChart from '@entities/dataset-specification-chart/ui';
-import { CenteredElement } from '@pages/traces/ui/ui.styled';
+import {SingleDatasetService} from '../../shared/api/services/SingleDatasetService';
+import DatasetSpecificationChart from '../../entities/dataset-specification-chart/ui';
+import { CenteredElement } from '../../pages/traces/ui/ui.styled';
 import { Skeleton } from '@mui/material';
 import { StyledBox } from './ui.styled';
-import { useActiveRegion } from '@shared/model/useActiveRegion';
-import { useActiveLab } from '@shared/model/useActiveLab';
-import { useActiveParameter } from '@shared/model/useActiveParameter';
-import { useRegionsCore } from '@app/core-data-slice/reducer';
-import { withConnectPlot } from '@shared/ui/plotly-interaction/with-diagram';
-import { useActiveAgeRange } from '@shared/model/useActiveAgeRange';
-import { useActiveHumanSex } from '@shared/model/useActiveHumanSex';
-import { type IChartRequestParams } from '@shared/api/model/сhartRequestParams';
-import { ChartIds } from '@entities/dataset-specification-chart/constants';
-import { type ChartId } from '@shared/api/model/ChartId';
-import { listenCustomEvent } from '@features/plotly-wordstat/customEvents';
+import { useActiveRegion } from '../../shared/model/useActiveRegion';
+import { useActiveLab } from '../../shared/model/useActiveLab';
+import { useActiveParameter } from '../../shared/model/useActiveParameter';
+import { useRegionsCore } from '@org/store-redux';
+import { withConnectPlot } from '../../shared/ui/plotly-interaction/with-diagram';
+import { useActiveAgeRange } from '../../shared/model/useActiveAgeRange';
+import { useActiveHumanSex } from '../../shared/model/useActiveHumanSex';
+import { type IChartRequestParams } from 'types';
+import { ChartIds } from '../../entities/dataset-specification-chart/constants';
+import { type ChartId } from 'types';
+import { listenCustomEvent } from '../../features/plotly-wordstat/customEvents';
 
 const PlotlyInteraction = withConnectPlot(DatasetSpecificationChart);
 

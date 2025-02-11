@@ -1,4 +1,4 @@
-import { type DatasetSpecificationChartProps, type OnClickPlot } from '@entities/dataset-specification-chart/ui';
+import { type DatasetSpecificationChartProps, type OnClickPlot } from '../../dataset-specification-chart/ui';
 import React, { useEffect } from 'react';
 import { useUpdateXCoordinate, useXCoordinate } from '.';
 import { type PlotData } from '@shared/api/model/PlotData';

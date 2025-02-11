@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Skeleton, Typography, Checkbox, FormControlLabel } from '@mui/material';
-import { useActiveRegion } from '@shared/model/useActiveRegion';
-import DatasetSpecificationChart from '@entities/dataset-specification-chart/ui';
 import WordStatParametersAccordion from '../wordstat-parameters-accordion/wordstat-parameters-accordion';
-import { withConnectPlot } from '@shared/ui/plotly-interaction/with-diagram';
 import { dispatchCustomEvent } from '../customEvents';
-import { ChartIds } from '@entities/dataset-specification-chart/constants';
-import { type ChartId } from '@shared/api/model/ChartId';
-import { WordStatService } from '@shared/api/services/WordStatService';
+import { type ChartId } from 'types';
+import { useActiveRegion } from '../../../shared/model/useActiveRegion';
+import { ChartIds } from '../../../entities/dataset-specification-chart/constants';
+import { WordStatService } from '../../../shared';
+import { withConnectPlot } from '../../../shared/ui/plotly-interaction/with-diagram';
+import DatasetSpecificationChart from '../../../entities/dataset-specification-chart/ui';
 
 const PlotlyInteraction = withConnectPlot(DatasetSpecificationChart);
 

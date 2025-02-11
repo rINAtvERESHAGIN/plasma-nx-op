@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { type IRegionData } from 'types';
 import { useAppDispatch, useAppSelector } from '@org/store-redux';
 import { Typography } from '@mui/material';
-import '@shared/styles/scroll.css';
+import '../../../shared/styles/scroll.css';
 import { animated, useSpring } from 'react-spring';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Divider from '@mui/material/Divider';
@@ -18,14 +18,14 @@ import {
   SettingsContainer,
   TimeLineBox
 } from './ui.styled';
-import { useParametersCore } from 'packages/store-redux/src/slices/core-data/core-data.slice';
+import { useParametersCore } from '@org/store-redux';
 import { useActiveParameter } from '../../../shared/model/useActiveParameter';
 import { useActiveRegion } from '../../../shared/model/useActiveRegion';
 import { set3dLayerEnabled, setOpenSettings, setOpenTimeLine } from '../model';
 import ChartStlDecompose from '../../../features/chart-stl-decompose/ui';
 import ChartWeekValueRelationship from '../../../features/chart-week-value-relationship/ui';
 import CustomEditor from '../../../features/draft-split-central-panel-editor/ui';
-import RegionService from '../../../shared/api/services/RegionService';
+import {RegionService} from '../../../shared/api/services';
 import WidgetTabs from '../../../widgets/tabs/ui';
 import SettingsDock from '../../../features/main-page-settings-dock/ui';
 import { StatsAgeSexPyramidPlotly } from '../../../features/stats-age-sex-pyramid/ui';

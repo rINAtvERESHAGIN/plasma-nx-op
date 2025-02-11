@@ -1,5 +1,5 @@
 import { getItemFromDb, setItemToStoreDb } from '@app/index';
-import { Content, CustomPlotContainer } from '@features/portal/portal.styled';
+import { Content, CustomPlotContainer } from '../../portal/portal.styled';
 import { Box, Stepper, Step, StepLabel, StepContent, CircularProgress, LinearProgress, Fade } from '@mui/material';
 import { type SpecificationFormValue } from 'blocknote/src/entities/custom-block/block-render';
 import { DatasetSpecificationForms } from 'dataset-specification-form/features/DatasetSpecificationForms';

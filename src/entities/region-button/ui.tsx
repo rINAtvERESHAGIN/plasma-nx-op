@@ -1,13 +1,13 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-// import { selectedRegion } from "@features/try-map/model/reducer-slice-geo-map";
-import { setRegion } from '@shared/model/system-operator';
+// import { selectedRegion } from "../../try-map/model/reducer-slice-geo-map";
+import { setRegion } from '../../shared/model/system-operator';
 import { useAppDispatch } from '@org/store-redux';
 import bbox from '@turf/bbox';
 import styled from '@emotion/styled';
 import { Tooltip } from '@mui/material';
-import { useRouteLoaderData } from 'react-router';
-import { useRegionsCore } from '@app/core-data-slice/reducer';
+import { useRouteLoaderData } from 'react-router-dom';
+import { useRegionsCore } from '@org/store-redux';
 
 const ButtonContainer = styled.div`
   position: absolute;

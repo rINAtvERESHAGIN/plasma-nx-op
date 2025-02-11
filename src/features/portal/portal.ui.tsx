@@ -1,7 +1,7 @@
 import React from 'react';
 import { Content, ExpandArea } from './portal.styled';
 import { type ExpandState } from './type';
-import ProcessorStages from '@features/processor-stages/processor-stages.ui';
+import ProcessorStages from '../../processor-stages/processor-stages.ui';
 import { type SpecificationFormValue } from 'blocknote/src/entities/custom-block/block-render';
 
 interface IProps {

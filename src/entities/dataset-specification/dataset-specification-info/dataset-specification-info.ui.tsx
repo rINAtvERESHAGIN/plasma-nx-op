@@ -1,7 +1,7 @@
 import Info from '@shared/ui/info/ui';
 import React, { useEffect, useState } from 'react';
 import { type DatasetSpecification } from '@shared/api/model/Comparison';
-import { useLabsCore, useParametersCore, useRegionsCore } from '@app/core-data-slice/reducer';
+import { useLabsCore, useParametersCore, useRegionsCore } from '@org/store-redux';
 import { ContentContainer } from './dataset-specification-info.styled';
 import { type InfoId, type DatasetSpecificationInfoType } from './dataset-specification-info.types';
 import { isNil } from 'lodash';

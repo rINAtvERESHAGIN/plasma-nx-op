@@ -1,5 +1,5 @@
 import { Chip, Typography } from '@mui/material';
-import { getFormattedDate } from '@entities/comparison-selected-status/lib/helper';
+import { getFormattedDate } from '../../comparison-selected-status/lib/helper';
 import * as React from 'react';
 import { sexMapping } from './dataset-specification-info.config';
 import { AgeContainer } from './dataset-specification-info.styled';

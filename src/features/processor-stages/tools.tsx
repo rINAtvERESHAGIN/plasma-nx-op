@@ -1,4 +1,4 @@
-import { converterFormData, convertorProcessorSpecification } from '@features/portal/portal.utils';
+import { converterFormData, convertorProcessorSpecification } from '../../portal/portal.utils';
 import { CohortService } from '@shared/api/services/CohortService';
 import { isNil } from 'lodash';
 import React from 'react';

@@ -7,6 +7,7 @@ import { lazy } from 'react';
 import { mainLoader } from '../pages/map/lib/loader';
 import { loaderComparison } from '../shared';
 
+
 const SplitMainPage = lazy(async () => ({ default: (await import('../pages/main-page-split/ui/ui')).SplitMainPage }));
 const ParametersGallery = lazy(async () => ({ default: (await import('../pages')).ParametersGallery }));
 const ParameterInfo = lazy(async () => ({ default: (await import('../pages')).ParameterInfo }));
@@ -179,5 +180,5 @@ export const router = createBrowserRouter([
     path: 'mapbox',
     element: <GlobeMapBox />,
     loader: rootLoader
-  }
+  },
 ]);
