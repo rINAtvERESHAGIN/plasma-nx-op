@@ -1,10 +1,6 @@
-import { AllRegion, Lab, Parameter, Timeline } from "types";
-import MapBoundariesService from "../../../features/mapbox/utils/loader";
-import LabsService from "../../../shared/api/services/LabsService";
-import ParametersService from "../../../shared/api/services/ParameterService";
-import ProcessorsService from "../../../shared/api/services/ProcessorsService";
-import RegionInfoService from "../../../shared/api/services/RegionInfoService";
-
+import { AllRegion, Lab, Parameter, Timeline } from 'types';
+import MapBoundariesService from '../../../features/mapbox/utils/loader';
+import { LabsService, ParametersService, ProcessorsService, RegionInfoService } from '../../../shared/api/services';
 
 export const mainLoader = async (): Promise<any[]> =>
   await Promise.all([

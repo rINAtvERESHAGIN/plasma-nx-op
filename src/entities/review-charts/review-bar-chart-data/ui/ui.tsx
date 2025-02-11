@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Typography from '@mui/material/Typography';
 import Chart from 'react-apexcharts';
-import { useAppSelector } from '@app/store';
 import { ReviewBarChartDataCardContent, StyledCard } from './ui.styled';
 import { useInView } from 'react-intersection-observer';
+import { useAppSelector } from '@org/store-redux';
 
 interface ChartOptions {
   chart: {

@@ -3,7 +3,7 @@ import { setActiveDefaultParameter } from '../../shared/model/useActiveParameter
 import { ThunkAction } from '@reduxjs/toolkit';
 import { LoaderFunction } from 'react-router-dom';
 import { AnyAction } from 'redux';
-import AuthService from '../../shared/api/services/AuthService';
+import { AuthService } from '../../shared/api/services';
 import { setLabs } from '../../shared/model/labs';
 import { setRegions } from '../../shared/model/regions';
 import { setActiveDefaultAgeRange } from '../../shared/model/useActiveAgeRange';

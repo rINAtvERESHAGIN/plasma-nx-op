@@ -25,12 +25,12 @@ import {
   StyledFlow,
   StyledMiniMap
 } from './ui.styled';
-import { type LayoutDirection } from 'shared/api/model/resultFlow';
+import { type LayoutDirection } from 'types';
 import { flowKey } from './constants';
-import ContextMenu from '@entities/result-flow-context-menu/ui';
-import ControlPanel from '@entities/result-flow-control-panel/ui';
-import RequiresEdge from '@entities/result-flow-custom-edge/edge-types/requires-edge.ui';
-import ProducesEdge from '@entities/result-flow-custom-edge/edge-types/produces-edge.ui';
+import ContextMenu from '../../entities/result-flow-context-menu/ui';
+import ControlPanel from '../../entities/result-flow-control-panel/ui';
+import RequiresEdge from '../../entities/result-flow-custom-edge/edge-types/requires-edge.ui';
+import ProducesEdge from '../../entities/result-flow-custom-edge/edge-types/produces-edge.ui';
 
 const nodeTypes = {
   dragHandleNode: DragHandleNode

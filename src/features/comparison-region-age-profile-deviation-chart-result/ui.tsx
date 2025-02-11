@@ -1,7 +1,6 @@
 import { Skeleton } from '@mui/material';
-import { CohortService } from '@shared/api/services/CohortService';
+import { CohortService } from '../../shared/api/services';
 import React, { useState, useEffect, useMemo } from 'react';
-import { PlotlyRepresentationChart } from '@features/plotly-representation-chart/ui';
 import { Container } from './ui.styled';
 import { isNil } from 'lodash';
 import type { PlotData } from 'plotly.js';
@@ -16,6 +15,7 @@ import {
   SELECTED_LINE_WIDTH,
   SELECTED_SIZE
 } from './constants';
+import { PlotlyRepresentationChart } from '../plotly-representation-chart/ui';
 
 export const RegionAgeProfileDeviationChartResult: React.FunctionComponent<
   RegionAgeProfileDeviationChartResultProps

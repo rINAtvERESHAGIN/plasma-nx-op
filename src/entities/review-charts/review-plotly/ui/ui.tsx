@@ -1,7 +1,7 @@
 import React from 'react';
-import Plot from 'react-plotly.js';
-import { useAppSelector } from '@app/store';
 import { ReviewPlotlyCardContent, StyledCard } from './ui.styled';
+import Plot from 'react-plotly.js';
+import { useAppSelector } from '@org/store-redux';
 
 const ReviewPlotly = (props): React.ReactNode => {
   const ageSexPyramidCoverage = useAppSelector((state) => state.reviewChart.ageSexPyramidCoverage);
