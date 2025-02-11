@@ -1,8 +1,7 @@
-import { type RootState } from '@app/store';
-import { updateUserInfo } from '@pages/personal-account/model.ts';
-import { type AnyAction } from 'redux';
-import { type ThunkAction } from 'redux-thunk';
-import AuthService from '@shared/api/services/AuthService';
+import { RootState, updateUserInfo } from '@org/store-redux';
+import { ThunkAction } from '@reduxjs/toolkit';
+import { AnyAction } from 'redux';
+import { AuthService } from '../../shared';
 
 export const userInfo = (): ThunkAction<Promise<void>, RootState, unknown, AnyAction> => async (dispatch: any) => {
   try {

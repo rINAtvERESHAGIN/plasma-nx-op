@@ -1,9 +1,8 @@
-import React from 'react';
-import { RegionAutocomplete } from '@features/region-autocomplete/ui';
-import { Tag } from '@shared/ui/story-tag/ui';
 import { RegionContainer } from './ui.styled';
 import { regionTags } from './constants';
 import type { RegionTabProps } from './types';
+import { RegionAutocomplete } from '../region-autocomplete/ui';
+import { Tag } from '../../shared/ui/story-tag/ui';
 
 export const getTabs = ({ selectedRegions, handleTagClick, setSelectedRegions }: RegionTabProps) => [
   {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Form } from 'react-final-form';
 import { AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ParsedPresetsFormField from '@entities/result-flow-parsed-presets-form-field/ui';
+
 import {
   AccordionContainer,
   KeyName,
@@ -11,6 +11,7 @@ import {
   StyledAccordionSummary,
   StyledButton
 } from './ui.styled';
+import ParsedPresetsFormField from '../../entities/result-flow-parsed-presets-form-field/ui';
 
 const getInitialValues = (parsedPresets) => {
   if (!parsedPresets) return {};

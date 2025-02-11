@@ -1,13 +1,14 @@
 import React from 'react';
-import RadioButtonsGroup from '@shared/ui/radio-group/ui';
 import type { TrendFilterOptionsProps, TrendFilterValues } from './type';
-import { radioOptions } from './constants.tsx';
 import { Container, LabeledAutocomplete, Label, Title, StyledButton } from './ui.styled';
-import { AgeOptionGroup } from '@features/cohort-age-option-group/ui.tsx';
-import { AreaOptionGroup } from '@features/cohort-area-option-group/ui.tsx';
 import { Form, Field } from 'react-final-form';
-import { LabAutocompleteWithTags } from '@features/lab-tags-autocomplete/ui.tsx';
-import { ParameterAutocompleteWithTags } from '@features/parameter-tags-autocomplete/ui.tsx';
+import { LabAutocompleteWithTags } from '../lab-tags-autocomplete/ui';
+import { ParameterAutocompleteWithTags } from '../parameter-tags-autocomplete/ui';
+import { radioOptions } from './constants';
+import RadioButtonsGroup from '../../shared/ui/radio-group/ui';
+import { AgeOptionGroup } from '../cohort-age-option-group/ui';
+import { AreaOptionGroup } from '../cohort-area-option-group/ui';
+
 
 export const TrendFilterOptions: React.FunctionComponent<TrendFilterOptionsProps> = ({ filterValues, onSave }) => {
   const onSubmit = (values: TrendFilterValues): void => {

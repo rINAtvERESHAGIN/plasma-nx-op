@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
 import { type PlotMouseEvent } from 'plotly.js';
-import { useXCoordinate } from '@shared/ui/plotly-interaction/reducer';
 import { type PlotData } from './@types/PlotData';
-import ResizableDiv from '@features/resize-block/ui';
 import { Fade } from '@mui/material';
 import { PlotContainer, PlotShadow, PlotWrapper } from './ui.styled';
 import { setChartHeight, getChartHeight } from './utils';
-import { type ChartId } from '@shared/api/model/ChartId';
+import { type ChartId } from 'types';
 import { isNil } from 'lodash';
+import { useXCoordinate } from '@org/store-redux';
 
 export type OnClickPlot = (event: Readonly<PlotMouseEvent>) => void;
 

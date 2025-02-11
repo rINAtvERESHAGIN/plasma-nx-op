@@ -1,13 +1,14 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { useParametersCore } from '@app/core-data-slice/reducer';
-import { getSelectViewParameters } from '@features/trace-form/lib/getSelectViewParameters';
+import { useParametersCore } from '@org/store-redux';
 import { isEqual, isNil } from 'lodash';
 import { type ParameterAutocompleteProps, type ParameterOption } from './types';
-import { CustomAutocomplete } from '@shared/ui/story-autocomplete/ui';
+import { getSelectViewParameters } from '../trace-form/lib/getSelectViewParameters';
+import { CustomAutocomplete } from '../../shared/ui/story-autocomplete/ui';
+
 
 export const ParameterAutocomplete: React.FunctionComponent<ParameterAutocompleteProps> = ({
   value,
-  onParameterChange,
+  onParameterChange
 }) => {
   const parameters = useParametersCore().data;
   const [selectedValue, setSelectedValue] = useState<ParameterOption | null>(null);
@@ -56,7 +57,7 @@ export const ParameterAutocomplete: React.FunctionComponent<ParameterAutocomplet
       options={autocompleteViewParameters}
       value={selectedValue}
       onChange={handleAutocompleteChange}
-      placeholder='Выберите параметр'
+      placeholder="Выберите параметр"
     />
   );
 };

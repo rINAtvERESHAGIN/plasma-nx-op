@@ -1,11 +1,11 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { useAppSelector } from '@app/store';
 import {
   ReviewNumberOfDataPointsNumberBubbleChartIcon,
   ReviewNumberOfDataPointsNumberCard,
   ReviewNumberOfDataPointsNumberCardContent
 } from './ui.styled';
+import { useAppSelector } from '@org/store-redux';
 
 const ReviewNumberOfDataPointsNumber = (props): React.ReactNode => {
   const dataPointsNumber = useAppSelector((state) => state.reviewChart.dataPointsNumber);

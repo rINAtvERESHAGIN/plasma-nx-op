@@ -1,8 +1,8 @@
-import { useLabsCore } from '@app/core-data-slice/reducer';
-import { getSelectViewLabs } from '@features/trace-form/lib/getSelectViewParameters';
+import { useLabsCore } from '@org/store-redux';
 import { Select, type SelectData } from 'mui-rff';
 import { useEffect, useState } from 'react';
 import * as React from 'react';
+import { getSelectViewLabs } from '../../lib/getSelectViewParameters';
 
 const LabDatasetSpecification = (): React.ReactNode => {
   const [selectViewLabs, setSelectViewLabs] = useState<SelectData[] | undefined>(undefined);

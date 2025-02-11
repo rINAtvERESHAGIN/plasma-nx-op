@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-import { useAppDispatch } from '@app/store';
-import { updateComparison } from '@pages/traces/model';
+import { updateComparison, useAppDispatch } from '@org/store-redux';
 import { type FieldInputProps, type FieldMetaState } from 'react-final-form';
 import { FormHelperText, InputLabel } from '@mui/material';
-import useDebounce from '@entities/timeline-geo-map-slider/use-debounce';
+import useDebounce from '../../../entities/timeline-geo-map-slider/use-debounce';
 
 function valuetext(value: number): string {
   return `${value}`;

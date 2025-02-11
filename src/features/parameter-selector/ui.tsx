@@ -2,13 +2,13 @@ import * as React from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import { type SelectProps } from '@mui/material/Select';
-import { useAppDispatch } from '@app/store';
+import { useAppDispatch } from '@org/store-redux';
 import { useEffect } from 'react';
 import { setParameter } from '@shared/model/system-operator';
 import { useActiveParameter } from '@shared/model/useActiveParameter';
 import { setMenuProps } from '@shared/ui/selector/styles';
 import Selector, { type ISelectorDate } from '@shared/ui/selector/ui';
-import { updateComparison } from '@pages/traces/model';
+import { updateComparison } from '@org/store-redux'
 import { useParametersCore } from '@app/core-data-slice/reducer';
 import { type Parameter } from '@shared/api/model/Parameter';
 

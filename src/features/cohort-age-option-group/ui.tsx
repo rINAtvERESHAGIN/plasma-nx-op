@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { SelectableButton } from '@shared/ui/sroty-selectable-button/ui';
 import { ButtonGroupContainer, Container, TabContentContainer } from './ui.styled';
 import type { AgeOptionGroupProps } from './types';
 import { getTabs } from './tabs-builder';
+import { SelectableButton } from '../../shared/ui/sroty-selectable-button/ui';
 
 export const AgeOptionGroup: React.FunctionComponent<AgeOptionGroupProps> = ({ ageValue, onAgeChange }) => {
   const [selectedRadio, setSelectedRadio] = useState<string>('2');

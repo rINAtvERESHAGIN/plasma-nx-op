@@ -1,7 +1,7 @@
 import React from 'react';
 import Fab from '@mui/material/Fab';
 import SettingsIcon from '@mui/icons-material/Settings';
-import { useAppDispatch, useAppSelector } from '@app/store.ts';
+import { useAppDispatch, useAppSelector } from '@org/store-redux.ts';
 import { setOpenSettings, setOpenTimeLine } from '@pages/main-page-split/model';
 
 function FloatingButtonWithPopover(): React.ReactNode {

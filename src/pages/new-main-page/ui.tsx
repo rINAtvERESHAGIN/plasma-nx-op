@@ -13,7 +13,7 @@ import SubjectIcon from '@mui/icons-material/Subject';
 import SchemaTwoToneIcon from '@mui/icons-material/SchemaTwoTone';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from '@app/store';
+import { useAppDispatch, useAppSelector } from '@org/store-redux';
 import GeoMapService from '@shared/api/services/GeoMapService';
 import { updateDocument } from '@pages/root/model';
 import { OutletContainer } from '@pages/root/ui.styled';

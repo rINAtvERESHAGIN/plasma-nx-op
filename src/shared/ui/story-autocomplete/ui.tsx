@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Autocomplete, type AutocompleteProps, TextField, ThemeProvider, Checkbox } from '@mui/material';
 import { theme } from './ui.styled';
-import { CaretDown } from '@shared/draft-icons/caret-down/CaretDown';
+// import { CaretDown } from '../shared/draft-icons/caret-down/CaretDown';
+import { CaretDown } from '../../draft-icons/caret-down/CaretDown';
 
 interface IOption {
   label: string;

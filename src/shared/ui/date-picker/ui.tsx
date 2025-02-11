@@ -3,8 +3,8 @@ import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import { useAppDispatch } from '@app/store';
-import { updateComparison } from '@pages/traces/model';
+import { useAppDispatch } from '@org/store-redux';
+import { updateComparison } from '@org/store-redux'
 import dayjs, { type Dayjs } from 'dayjs';
 import { comparisonDefaultDate } from '@shared/ui/date-picker/lib/constant';
 import useDebounce from '../../../entities/timeline-geo-map-slider/use-debounce';

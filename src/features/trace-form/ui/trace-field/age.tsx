@@ -1,6 +1,6 @@
-import React from 'react';
 import { Field } from 'react-final-form';
-import AgeRangeSlider from '@shared/ui/age-range-slider/ui';
+import AgeRangeSlider from '../../../../shared/ui/age-range-slider/ui';
+
 
 interface IProps {}
 

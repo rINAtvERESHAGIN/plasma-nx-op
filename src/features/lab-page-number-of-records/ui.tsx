@@ -9,16 +9,16 @@ import {
   StyledDialog,
   ExpandButton
 } from './ui.styled';
-import { ChartOfProcessorResult } from '@features/chart-of-processor-result/ui';
 import { type NumberOfRecordsChartsProps } from './types';
 import { years } from './constants';
 import { Card, CardHeader } from '@plasma/ui';
-import InfoTooltip from '@entities/info-icon-with-tooltip/ui';
 import { WeeklyMeasurementInfo, DeviceRecordsInfo, chartConfigs } from './block-description';
 import { isNil } from 'lodash';
-import { type ProcessorConfiguration } from '@shared/api/model/ProcessorConfiguration';
-import { ArrowsOutSimple } from '@shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
 import { type PlotData } from 'plotly.js';
+import { ProcessorConfiguration } from 'types';
+import InfoTooltip from '../../entities/info-icon-with-tooltip/ui';
+import { ArrowsOutSimple } from '../../shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
+import { ChartOfProcessorResult } from '../chart-of-processor-result/ui';
 
 export const NumberOfRecordsCharts: React.FunctionComponent<NumberOfRecordsChartsProps> = ({
   dataWeeklyMeasurement,

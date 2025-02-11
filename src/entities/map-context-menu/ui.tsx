@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuItem from '@mui/material/MenuItem';
 import Divider from '@mui/material/Divider';
-import { useAppDispatch, useAppSelector } from '@app/store';
+import { useAppDispatch, useAppSelector } from '@org/store-redux';
 import { addRegionId, removeRegionId } from '@features/mapbox/ui/model';
 import { RegionName, StyledMenu } from '@entities/map-context-menu/ui.styled';
 

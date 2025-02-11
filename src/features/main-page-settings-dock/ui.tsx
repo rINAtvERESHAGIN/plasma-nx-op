@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import { Dock } from '../../entities/main-page-settings-dock/ui/ui';
 import { DockCard } from '@features/main-page-settings-dock-card/ui';
 import { Card } from '@entities/maip-page-settings-card/ui';
-import { useAppSelector } from '@app/store.ts';
+import { useAppSelector } from '@org/store-redux.ts';
 import { Body, DividerLine, Dot } from './ui.styled';
 import Icons from './dock-icons';
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParametersCore, useLabsCore, useRegionsCore } from '@app/core-data-slice/reducer';
+import { useParametersCore, useLabsCore, useRegionsCore } from '@org/store-redux';
 import {
   AlignCenterVerticalIcon,
   LeafIcon,
@@ -8,7 +8,7 @@ import {
   RoundBadge,
   ArrowsDownUpIcon,
   TableFilter,
-  Table,
+  Table
 } from '@plasma/ui';
 import {
   Row,
@@ -16,19 +16,15 @@ import {
   useReactTable,
   getCoreRowModel,
   getSortedRowModel,
-  flexRender,
+  flexRender
 } from '@tanstack/react-table';
-import {
-  getSelectViewParameters,
-  getAutocompleteViewRegions,
-  getSelectViewLabs,
-} from '@features/trace-form/lib/getSelectViewParameters';
 import { isNil } from 'lodash';
-import { AnomaliesTableService } from '@shared/api/services/AnomaliesTableService';
 import { TableContainer, TableFilterContainer, TableScrollableContainer } from './ui.styled';
 import { useColumns } from './useColumns';
-import { type AnomalyTableData } from '@shared/api/model/AnomalyTableData';
 import { type AnomalyTableProps } from './type';
+import { AnomalyTableData } from 'types';
+import { AnomaliesTableService } from '../../shared';
+import { getSelectViewParameters, getAutocompleteViewRegions, getSelectViewLabs } from '../trace-form/lib/getSelectViewParameters';
 
 export const AnomalyTable: React.FunctionComponent<AnomalyTableProps> = ({ onRowClick }) => {
   const parameters = useParametersCore().data;
@@ -81,18 +77,18 @@ export const AnomalyTable: React.FunctionComponent<AnomalyTableProps> = ({ onRow
     getSortedRowModel: getSortedRowModel(),
     onSortingChange: setSorting,
     state: {
-      sorting,
-    },
+      sorting
+    }
   });
 
   const [otherDistributionSort, setOtherDistributionSort] = useState<
     (() => undefined | ((event: unknown) => void)) | undefined
   >(undefined);
   const [meanChange, setMeanChangeSort] = useState<(() => undefined | ((event: unknown) => void)) | undefined>(
-    undefined,
+    undefined
   );
   const [seasonality, setSeasonalitySort] = useState<(() => undefined | ((event: unknown) => void)) | undefined>(
-    undefined,
+    undefined
   );
   const [technicalArtifact, setTechnicalArtifactSort] = useState<
     (() => undefined | ((event: unknown) => void)) | undefined
@@ -107,17 +103,17 @@ export const AnomalyTable: React.FunctionComponent<AnomalyTableProps> = ({ onRow
     setOtherDistributionSort(
       other_distribution_pvalue.column.getCanSort()
         ? other_distribution_pvalue.column.getToggleSortingHandler
-        : undefined,
+        : undefined
     );
 
     setMeanChangeSort(
-      mean_change_pvalue.column.getCanSort() ? mean_change_pvalue.column.getToggleSortingHandler : undefined,
+      mean_change_pvalue.column.getCanSort() ? mean_change_pvalue.column.getToggleSortingHandler : undefined
     );
 
     setSeasonalitySort(seasonality.column.getCanSort() ? seasonality.column.getToggleSortingHandler : undefined);
 
     setTechnicalArtifactSort(
-      technical_artifact.column.getCanSort() ? technical_artifact.column.getToggleSortingHandler : undefined,
+      technical_artifact.column.getCanSort() ? technical_artifact.column.getToggleSortingHandler : undefined
     );
   }, [table]);
 
@@ -131,7 +127,7 @@ export const AnomalyTable: React.FunctionComponent<AnomalyTableProps> = ({ onRow
         onRowClick(
           getSelectViewParameters(parameter).value,
           getAutocompleteViewRegions(region).value.id,
-          getSelectViewLabs(lab).value,
+          getSelectViewLabs(lab).value
         );
       }
     }

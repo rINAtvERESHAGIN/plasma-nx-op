@@ -1,5 +1,6 @@
-import { type DataSpecification, type ProcessorConfiguration } from '@shared/api/model/ProcessorConfiguration';
-import { SIRI } from '@shared/config/const/bio-indexes';
+import { SIRI } from '../../shared/config/const/bio-indexes';
+import { type DataSpecification, type ProcessorConfiguration } from 'types';
+
 
 export const baseData: DataSpecification = {
   parameter_ids: [27],

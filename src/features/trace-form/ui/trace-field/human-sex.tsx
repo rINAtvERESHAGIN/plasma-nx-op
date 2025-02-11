@@ -1,6 +1,5 @@
-import { genderRadioOptions } from '@features/trace-form/lib/constants';
 import { Radios } from 'mui-rff';
-import React from 'react';
+import { genderRadioOptions } from '../../lib/constants';
 
 const HumanSexDatasetSpecification = () => {
   return (

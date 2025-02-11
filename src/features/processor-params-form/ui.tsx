@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Typography, Button } from '@mui/material';
-import ProcessorParamFormField from '@entities/processor-param-form-field/ui';
 import { Form } from 'react-final-form';
 import { FieldContainer } from './ui.styled';
 import { parseISO, isValid } from 'date-fns';
+import ProcessorParamFormField from '../../entities/processor-param-form-field/ui';
 
 const getDefaultInitialValue = (params) => {
   return Object.entries(params).reduce((acc, [paramKey, paramDetail]) => {
@@ -30,8 +30,7 @@ const ProcessorParamsForm = ({ item }): React.ReactNode => {
   const onSubmit = async (values): void => {};
 
   return (
-    <>
-      <Form
+    <Form
         onSubmit={onSubmit}
         initialValues={initialValues}
         render={({ handleSubmit, form, submitting, pristine }) => (
@@ -50,7 +49,6 @@ const ProcessorParamsForm = ({ item }): React.ReactNode => {
           </form>
         )}
       />
-    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
-import { useAppSelector } from '@app/store';
+import { useAppSelector } from '@org/store-redux';
 
 const SubmitButton = ({ children }: { children: React.ReactNode }): React.ReactNode => {
   const traceForm = useAppSelector((state) => state.finalFormRedux.trace);

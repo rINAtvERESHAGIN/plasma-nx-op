@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAppDispatch } from '@app/store';
+import { useAppDispatch } from '@org/store-redux';
 import { setHumanSex } from '@shared/model/system-operator';
 import RadioButtonsGroup from '@shared/ui/radio-group/ui';
 import Box from '@mui/material/Box';

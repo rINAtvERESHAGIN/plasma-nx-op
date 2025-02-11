@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { setRegion, useOverviewInformation, useActiveDate } from '@shared/model/system-operator';
 import { MapContainer } from '@features/mapbox/ui/ui.styled';
 import Map, { Layer, Source } from 'react-map-gl';
-import { useAppDispatch, useAppSelector } from '@app/store';
+import { useAppDispatch, useAppSelector } from '@org/store-redux';
 import GeoMapService from '@shared/api/services/GeoMapService';
 import { updateDocument } from '@pages/root/model';
 import { borderLayer, dataLayer, extrusionLayer, markerLayer, patternFillLayer } from '../map-style';

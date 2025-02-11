@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import RangeSlider from '@shared/ui/range-slider/ui';
-import { useAppDispatch } from '@app/store';
+import { useAppDispatch } from '@org/store-redux';
 import useDebounce from '@entities/timeline-geo-map-slider/use-debounce';
 import { Typography } from '@mui/material';
 import { setAgeRange } from '@shared/model/system-operator';

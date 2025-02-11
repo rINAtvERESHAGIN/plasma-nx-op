@@ -1,14 +1,14 @@
 import React from 'react';
-import RadioButtonsGroup from '@shared/ui/radio-group/ui';
 import type { TrendFilterOptionsProps, TrendFilterValues } from './type.ts';
-import { radioOptions } from './constants.tsx';
-import { Container, LabeledAutocomplete, Label, Title, StyledButton } from './ui.styled.ts';
-import { AgeOptionGroup } from '@features/cohort-age-option-group/ui.tsx';
-import { AreaOptionGroup } from '@features/cohort-area-option-group/ui.tsx';
 import { Form, Field } from 'react-final-form';
-import { LabAutocompleteWithTags } from '@features/lab-tags-autocomplete/ui.tsx';
-import { ParameterAutocompleteWithTags } from '@features/parameter-tags-autocomplete/ui.tsx';
 import { isEqual } from 'lodash';
+import { Container, Label, LabeledAutocomplete, StyledButton, Title } from './ui.styled.js';
+import RadioButtonsGroup from '../../shared/ui/radio-group/ui.js';
+import { AgeOptionGroup } from '../cohort-age-option-group/ui.js';
+import { AreaOptionGroup } from '../cohort-area-option-group/ui.js';
+import { LabAutocompleteWithTags } from '../lab-tags-autocomplete/ui.js';
+import { ParameterAutocompleteWithTags } from '../parameter-tags-autocomplete/ui.js';
+import { radioOptions } from './constants.js';
 
 export const CohortFilterOptions: React.FunctionComponent<TrendFilterOptionsProps> = ({
   filterValues,

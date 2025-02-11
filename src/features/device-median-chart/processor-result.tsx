@@ -1,11 +1,11 @@
 import { Skeleton } from '@mui/material';
-import { CohortService } from '@shared/api/services/CohortService';
 import React, { useState, useEffect } from 'react';
 import { type LegendClickEvent, type PlotData } from 'plotly.js';
 import { isNil } from 'lodash';
 import { Container } from './ui.styled';
-import { DeviceMedianPlotlyRepresentation } from '@features/device-median-chart/plotly-representation';
-import type { DeviceMedianProcessorResultProps, TraceVisibilityProps } from './types';
+import type { DeviceMedianProcessorResultProps } from './types';
+import { CohortService } from '../../shared';
+import { DeviceMedianPlotlyRepresentation } from './plotly-representation';
 
 export const DeviceMedianProcessorResult: React.FunctionComponent<DeviceMedianProcessorResultProps> = ({
   processorConfig,

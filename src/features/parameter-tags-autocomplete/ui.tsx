@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from './ui.styled';
-import { Tag } from '@shared/ui/story-tag/ui.tsx';
 import { parameterTags } from './constants';
 import type { ParameterAutocompleteWithTagsProps } from './types';
-import { ParameterAutocomplete } from '@features/parameter-autocomplete/ui';
+import { Tag } from '../../shared/ui/story-tag/ui';
+import { ParameterAutocomplete } from '../parameter-autocomplete/ui';
 
 export const ParameterAutocompleteWithTags: React.FunctionComponent<ParameterAutocompleteWithTagsProps> = ({
   value,

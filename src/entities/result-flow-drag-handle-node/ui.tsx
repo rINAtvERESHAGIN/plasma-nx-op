@@ -11,7 +11,7 @@ import {
   CardContentTitle
 } from './ui.styled';
 import { typeToColorMap } from './constants';
-import renderParsedPresets from '@features/result-flow-parsed-presets-form/ui';
+import renderParsedPresets from '../../features/result-flow-parsed-presets-form/ui';
 
 const DragHandleNode = ({ data }: NodeProps) => {
   const backgroundColor = typeToColorMap[data.type] || 'grey';

@@ -1,10 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { useRegionsCore } from '@app/core-data-slice/reducer';
-import { type Region } from '@shared/model/regions';
-import { type RegionCodes } from '@shared/api/model/RegionCodes';
+import { useRegionsCore } from '@org/store-redux';
+import { type Region, type RegionCodes } from 'types';
 import { isNil, isEqual } from 'lodash';
 import { type RegionAutocompleteProps, type RegionOption, type RegionChangeHandler } from './types';
-import { CustomAutocomplete } from '@shared/ui/story-autocomplete/ui';
+import { CustomAutocomplete } from '../../shared/ui/story-autocomplete/ui';
 
 const getAutocompleteViewRegions = (region: Region): RegionOption => ({ label: region.name_ru, value: region });
 

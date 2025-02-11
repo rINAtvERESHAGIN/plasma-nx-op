@@ -1,9 +1,9 @@
-import CustomRadioButton from '@shared/ui/radio-button/ui';
-import RangeSlider from '@shared/ui/range-slider/ui';
 import { RadioGroupContainer } from './ui.styled';
 import type { AgeTabProps } from './types';
 import { isNil } from 'lodash';
 import { ageGroupRadioOptions } from './constants';
+import CustomRadioButton from '../../shared/ui/radio-button/ui';
+import RangeSlider from '../../shared/ui/range-slider/ui';
 
 export const getTabs = ({ selectedRadio, setSelectedRadio, onAgeChange, ageValue }: AgeTabProps) => {
   const handleRadioClick = (value: string) => {

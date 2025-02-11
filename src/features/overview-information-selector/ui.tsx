@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import { type SelectChangeEvent } from '@mui/material/Select';
-import { useAppDispatch } from '@app/store';
+import { useAppDispatch } from '@org/store-redux';
 import Selector from '@shared/ui/selector/ui';
 import { setMenuProps } from '@shared/ui/selector/styles';
 import { menuItemsOverviewInformation } from '@features/overview-information-selector/lib/constants';

@@ -10,13 +10,13 @@ import {
   DeleteButton
 } from './ui.styled';
 import { Label } from '@plasma/ui';
-import { X } from '@shared/draft-icons/X/X';
-import { MapPin } from '@shared/draft-icons/map-pin/MapPin';
-import { FirstAid } from '@shared/draft-icons/first-aid/FirstAid';
-import { Syringe } from '@shared/draft-icons/syringe/Syringe';
 import type { CohortSelectedFilterCardsProps } from './type';
 import { getGenderIcon } from './utils';
 import { BORDER_COLORS } from './constants';
+import { X } from '@mui/icons-material';
+import { FirstAid } from '../../shared/draft-icons/first-aid/FirstAid';
+import { MapPin } from '../../shared/draft-icons/map-pin/MapPin';
+import { Syringe } from '../../shared/draft-icons/syringe/Syringe';
 
 export const CohortSelectedFilterCards: React.FunctionComponent<CohortSelectedFilterCardsProps> = ({
   filterSelections,

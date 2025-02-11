@@ -9,14 +9,14 @@ import {
   ReviewContainer,
   ReviewChartsContainer,
   LinkContainerEnd
-} from '@pages/globe-map/ui/ui.styled';
+} from './ui.styled';
 import { Typography } from '@mui/material';
 import ApexChart from './test-chart';
-import ReviewNumberOfRations from '@entities/review-charts/review-number-of-patients/ui/ui';
-import ReviewNumberOfObservationsNumber from '@entities/review-charts/review-number-of-observations-number/ui/ui';
-import ReviewNumberOfDataPointsNumber from '@entities/review-charts/review-number-of-data-points-number/ui/ui';
-import ReviewLaboratoriesChartData from '@entities/review-charts/review-laboratories-chart-data/ui/ui';
-import ReviewBarChartData from '@entities/review-charts/review-bar-chart-data/ui/ui';
+import ReviewBarChartData from '../../../entities/review-charts/review-bar-chart-data/ui/ui';
+import ReviewLaboratoriesChartData from '../../../entities/review-charts/review-laboratories-chart-data/ui/ui';
+import ReviewNumberOfDataPointsNumber from '../../../entities/review-charts/review-number-of-data-points-number/ui/ui';
+import ReviewNumberOfObservationsNumber from '../../../entities/review-charts/review-number-of-observations-number/ui/ui';
+import ReviewNumberOfRations from '../../../entities/review-charts/review-number-of-patients/ui/ui';
 
 export interface Location {
   id: number;

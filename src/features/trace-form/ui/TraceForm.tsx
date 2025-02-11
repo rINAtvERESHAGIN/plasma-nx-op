@@ -4,12 +4,8 @@ import Typography from '@mui/material/Typography';
 import { Form } from 'react-final-form';
 import { type FormApi } from 'final-form';
 import { Button } from '@mui/material';
-import DatasetSpecificationFormHeader from '@features/trace-form/ui/trace-form-header';
-import FinalFormStateToRedux from '@shared/api/lib/final-form/final-form-state-to-redux';
-import SubmitButton from '@features/trace-form/ui/submit-button/ui';
-import { useAppSelector } from '@app/store';
-import { DatasetSpecificationSubmitButtonStyled } from '@features/trace-form/ui/submit-button/ui.styled';
-import { type DatasetSpecificationStatus } from 'dataset-specification-form/shared/types/DatasetSpecificationStatus';
+import { useAppSelector } from '@org/store-redux';
+import { type DatasetSpecificationStatus } from 'types';
 import { type IPropsDatasetSpecification } from '../@types/IProps';
 import { AdditionCardActionStyled as CardActions, AdditionCardContent as CardContent, Content } from './ui.styled';
 import { traceValidation } from '../lib/validation';
@@ -20,6 +16,10 @@ import AgeDatasetSpecification from './trace-field/age';
 import HumanSexDatasetSpecification from './trace-field/human-sex';
 import DateDatasetSpecification from './trace-field/date';
 import PermissionDatasetSpecification from './trace-field/permission';
+import FinalFormStateToRedux from '../../../shared/api/lib/final-form/final-form-state-to-redux';
+import DatasetSpecificationFormHeader from './trace-form-header';
+import SubmitButton from './submit-button/ui';
+import { DatasetSpecificationSubmitButtonStyled } from './submit-button/ui.styled';
 
 export function DatasetSpecificationForm({
   externalSubmit,

@@ -1,7 +1,7 @@
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
-import CustomRadioButton from '@shared/ui/radio-button/ui';
 import styled from 'styled-components';
+import CustomRadioButton from '../radio-button/ui';
 
 export interface IRadioOption {
   value: string;

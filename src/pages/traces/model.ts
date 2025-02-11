@@ -1,9 +1,10 @@
+import { comparisonDefaultDate } from '@org/constants-plasma';
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import { comparisonDefaultDate } from '@shared/ui/date-picker/lib/constant';
-import { type Comparison } from '@shared/api/model/Comparison';
+
+import { type Comparison } from 'types';
 
 interface InitialState extends Comparison {
-  chart: any
+  chart: any;
 }
 
 const initialState: InitialState = {
@@ -17,14 +18,13 @@ const initialState: InitialState = {
   chart: undefined
 };
 
-type UpdateComparisonPayloadAction = InitialState
+type UpdateComparisonPayloadAction = InitialState;
 
 const comparisonSlice = createSlice({
   name: 'comparison',
   initialState,
   reducers: {
-    initComparison: () => {
-    },
+    initComparison: () => {},
     updateComparison: (state, { payload }: PayloadAction<UpdateComparisonPayloadAction>) => ({
       ...state,
       ...payload

@@ -1,11 +1,11 @@
 import { Skeleton } from '@mui/material';
-import { CohortService } from '@shared/api/services/CohortService';
 import React, { useState, useEffect } from 'react';
-import { PlotlyRepresentationChart } from '@features/plotly-representation-chart/ui';
 import { Container } from './ui.styled';
 import { isNil } from 'lodash';
 import type { PlotData } from 'plotly.js';
 import type { ChartOfProcessorResultProps } from './types';
+import { CohortService } from '../../shared';
+import { PlotlyRepresentationChart } from '../plotly-representation-chart/ui';
 
 export const ChartOfProcessorResult: React.FunctionComponent<ChartOfProcessorResultProps> = ({
   processorConfig,

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Typography from '@mui/material/Typography';
 import Chart from 'react-apexcharts';
-import { useAppSelector } from '@app/store';
 import { ReviewLaboratoriesChartDataCardContent, StyledCard } from './ui.styled';
 import { useInView } from 'react-intersection-observer';
+import { useAppSelector } from '@org/store-redux';
 
 const ReviewLaboratoriesChartData = (): React.ReactNode => {
   const observationsPerLab = useAppSelector((state) => state.reviewChart.observationsPerLab);

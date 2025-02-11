@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useAppSelector } from '@app/store';
+import { useAppSelector } from '@org/store-redux';
 import Box from '@mui/material/Box';
 import SingleDatasetService from '@shared/api/services/SingleDatasetService';
 import DatasetSpecificationChart from '@entities/dataset-specification-chart/ui';

@@ -32,3 +32,5 @@ export { DatasetSpecification } from './DatasetSpecification';
 export { Permission } from './Permission';
 export { IPropsDatasetSpecification } from './IPropsDatasetSpecification';
 export { DatasetSpecificationStatus } from './DatasetSpecificationStatus';
+export { DataSpecification } from './DataSpecification';
+export { RegionCodes } from './RegionCodes';

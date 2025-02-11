@@ -1,6 +1,6 @@
-import { permissionRadioOptions } from '@features/trace-form/lib/constants';
 import { Radios } from 'mui-rff';
 import React from 'react';
+import { permissionRadioOptions } from '../../lib/constants';
 
 const PermissionDatasetSpecification: React.FunctionComponent<any> = () => {
   return (

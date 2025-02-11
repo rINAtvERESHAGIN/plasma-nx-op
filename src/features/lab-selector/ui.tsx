@@ -2,11 +2,11 @@ import * as React from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import { type SelectChangeEvent } from '@mui/material/Select';
-import { useAppDispatch } from '@app/store';
+import { useAppDispatch } from '@org/store-redux';
 import { useEffect } from 'react';
 import Selector, { type ISelectorDate } from '@shared/ui/selector/ui';
 import { setMenuProps } from '@shared/ui/selector/styles';
-import { updateComparison } from '@pages/traces/model';
+import { updateComparison } from '@org/store-redux'
 import { setLab } from '@shared/model/system-operator';
 import { useActiveLab } from '@shared/model/useActiveLab';
 import { useLabsCore } from '@app/core-data-slice/reducer';

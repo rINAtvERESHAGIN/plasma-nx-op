@@ -1,4 +1,4 @@
-import { useAppDispatch } from '@app/store.ts';
+import { useAppDispatch } from '@org/store-redux.ts';
 import { setOpenSettings, setOpenTimeLine } from '@pages/main-page-split/model';
 import SettingsIcon from '@mui/icons-material/Settings';
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';

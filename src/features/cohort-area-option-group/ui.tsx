@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { SelectableButton } from '@shared/ui/sroty-selectable-button/ui';
 import { ButtonGroupContainer, Container, TabContentContainer } from './ui.styled';
 import type { AreaOptionGroupProps } from './types';
 import { getTabs } from './tabs-builder';
+import { SelectableButton } from '../../shared/ui/sroty-selectable-button/ui';
 
 export const AreaOptionGroup: React.FunctionComponent<AreaOptionGroupProps> = ({ value, onRegionChange }) => {
   const [activeTab, setActiveTab] = useState<number>(1);

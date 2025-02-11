@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import CardContent from '@mui/material/CardContent';
 import { Chip, Typography } from '@mui/material';
-import { useAppSelector } from '@app/store';
+import { useAppSelector } from '@org/store-redux';
 import styled from '@emotion/styled';
-import Info from '@shared/ui/info/ui';
-import { type DatasetSpecification } from '@shared/api/model/Comparison';
+import { type DatasetSpecification } from 'types';
 import { getFormattedDate } from './lib/helper';
+import Info from '../../shared/ui/info/ui';
 
 interface IProps {
   trace?: DatasetSpecification;

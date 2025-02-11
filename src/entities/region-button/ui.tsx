@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 // import { selectedRegion } from "@features/try-map/model/reducer-slice-geo-map";
 import { setRegion } from '@shared/model/system-operator';
-import { useAppDispatch } from '@app/store';
+import { useAppDispatch } from '@org/store-redux';
 import bbox from '@turf/bbox';
 import styled from '@emotion/styled';
 import { Tooltip } from '@mui/material';

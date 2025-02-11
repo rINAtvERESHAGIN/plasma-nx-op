@@ -3,9 +3,9 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
-import { useAppDispatch } from '@app/store';
+import { useAppDispatch } from '@org/store-redux';
 import { type SelectChangeEvent } from '@mui/material/Select';
-import { updateComparison } from '@pages/traces/model';
+import { updateComparison } from '@org/store-redux'
 
 interface IProps {
   initValue?: string

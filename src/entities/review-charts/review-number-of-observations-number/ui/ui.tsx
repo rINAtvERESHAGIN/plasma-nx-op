@@ -1,11 +1,11 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { useAppSelector } from '@app/store';
 import {
   ReviewNumberOfObservationsNumberCard,
   ReviewNumberOfObservationsNumberCardContent,
   ReviewNumberOfObservationsNumberVaccinesIcon
 } from './ui.styled';
+import { useAppSelector } from '@org/store-redux';
 
 const ReviewNumberOfObservationsNumber = (props): React.ReactNode => {
   const observationsNumber = useAppSelector((state) => state.reviewChart.observationsNumber);

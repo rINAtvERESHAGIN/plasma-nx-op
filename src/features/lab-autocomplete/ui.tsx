@@ -1,9 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { useLabsCore } from '@app/core-data-slice/reducer';
-import { getSelectViewLabs } from '@features/trace-form/lib/getSelectViewParameters';
+import { useLabsCore } from '@org/store-redux';
 import { isEqual, isNil } from 'lodash';
 import { type AutocompleteChange, type LabAutocompleteProps, type LabOption } from './types';
-import { CustomAutocomplete } from '@shared/ui/story-autocomplete/ui';
+import { getSelectViewLabs } from '../trace-form/lib/getSelectViewParameters';
+import { CustomAutocomplete } from '../../shared/ui/story-autocomplete/ui';
 
 export const LabAutocomplete: React.FunctionComponent<LabAutocompleteProps> = ({ value, onLabChange }) => {
   const labs = useLabsCore().data;
@@ -55,7 +55,7 @@ export const LabAutocomplete: React.FunctionComponent<LabAutocompleteProps> = ({
       value={selectedValue}
       onChange={handleAutocompleteChange}
       multiple={true}
-      placeholder='Выберите лабораторию'
+      placeholder="Выберите лабораторию"
     />
   );
 };

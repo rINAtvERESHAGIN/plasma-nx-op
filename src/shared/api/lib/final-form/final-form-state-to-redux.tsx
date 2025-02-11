@@ -1,13 +1,13 @@
 import React, { useCallback } from 'react';
 import { FormSpy } from 'react-final-form';
-import { useAppDispatch } from '@app/store';
+import { useAppDispatch } from '@org/store-redux';
 import { updateFormState } from './final-form-spy';
 
 interface IProps {
-  form: string
+  form: string;
 }
 
-function FinalFormStateToRedux ({ form }: IProps): React.ReactNode {
+function FinalFormStateToRedux({ form }: IProps): React.ReactNode {
   const dispatch = useAppDispatch();
 
   const handleOnChangeForm = useCallback<(state: any) => void>((state) => {

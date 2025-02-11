@@ -28,9 +28,9 @@ import { showSubHeader } from '../../../widgets/sub-header/model';
 import DatasetSpecificationChart from '../../../entities/dataset-specification-chart/ui';
 import DatasetSpecificationInfo from '../../../entities/comparison-selected-status/ui';
 import DatasetSpecificationUpdatePlot from '../../../entities/trace-update-plot/ui';
-import DatasetSpecificationsService from '../../../shared/api/services/DatasetSpecificationsService';
-import { DatasetSpecificationForm } from 'dataset-specification-form/entities/dataset-specification-form.ui';
+import {DatasetSpecificationsService} from '../../../shared/api/services/DatasetSpecificationsService';
 import { DatasetSpecificationStatus } from 'types';
+import { DatasetSpecificationForm } from '../../../features/trace-form/ui/TraceForm';
 
 export const DatasetSpecifications = (): React.ReactNode => {
   const dispatch = useAppDispatch();
