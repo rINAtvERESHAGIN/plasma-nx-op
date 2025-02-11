@@ -4,10 +4,10 @@ import EmailIcon from '@mui/icons-material/Email';
 import BadgeIcon from '@mui/icons-material/Badge';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { logout } from '@pages/personal-account/logout.tsx';
-import { userInfo } from '@pages/personal-account/user-info.tsx';
-import { useAppSelector } from '@app/store.ts';
 import { StyledAvatar, StyledBox, StyledList, StyledTypography } from '@features/personal-account/ui/ui.styled.ts';
+import { useAppSelector } from '@org/store-redux';
+import { userInfo } from '../../../pages/personal-account/user-info.js';
+import { logout } from '../../../pages/personal-account/logout.js';
 
 const PersonalAccount: React.FunctionComponent<any> = (props) => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const PersonalAccount: React.FunctionComponent<any> = (props) => {
     try {
       const response = await logout();
       if (response.ok) navigate('/login-page/main');
-    } catch (error) {}
+    } catch (error) { /* empty */ }
   };
 
   useEffect(() => {

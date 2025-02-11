@@ -1,21 +1,21 @@
 import React, { useMemo, useState } from 'react';
 import { MainContainer, HeaderContainer, StyledDialog, ExpandButton } from './ui.styled';
-import { ChartOfProcessorResult } from '@features/chart-of-processor-result/ui';
+import { ChartOfProcessorResult } from '../../features/chart-of-processor-result/ui';
 import { isNil } from 'lodash';
 import { Card, CardHeader } from '@plasma/ui';
-import InfoTooltip from '@entities/info-icon-with-tooltip/ui';
+import InfoTooltip from '../../entities/info-icon-with-tooltip/ui';
 import { TrendInfo, AgeValueInlineInfo, chartConfigs } from './block-description';
 import { additionalDefaultFilter, defaultFilters } from './constants';
-import { CohortSelectedFilterCards } from '@entities/cohort-selected-filter-cards/ui';
-import type { ProcessorConfiguration } from '@shared/api/model/ProcessorConfiguration';
-import { useLabsCore, useParametersCore, useRegionsCore } from '@app/core-data-slice/reducer';
-import { CohortFilterOptions } from '@features/cohort-comparison-page-filter/ui';
-import { ArrowsOutSimple } from '@shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
+import { CohortSelectedFilterCards } from '../../entities/cohort-selected-filter-cards/ui';
+import type { ProcessorConfiguration } from 'types';
+import { CohortFilterOptions } from '../../features/cohort-comparison-page-filter/ui';
+import { ArrowsOutSimple } from '../../shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
 import { defaultDataAgeValueInline, defaultDataSTLProcessor } from './data-config';
 import type { TranslatedFilterValues, TrendFilterValues } from './type';
 import { type PlotData } from 'plotly.js';
+import { useLabsCore, useParametersCore, useRegionsCore } from '@org/store-redux';
 
-const CohortComparisonPage: React.FunctionComponent = () => {
+export const CohortComparisonPage: React.FunctionComponent = () => {
   const labs = useLabsCore().data;
   const parameters = useParametersCore().data;
   const regions = useRegionsCore().data;
@@ -66,7 +66,7 @@ const CohortComparisonPage: React.FunctionComponent = () => {
         : selection.lab.join(', '),
 
       parameter: !isNil(parameters)
-        ? (parameters.find((param) => param.id === selection.parameter)?.name_ru ?? selection.parameter)
+        ? parameters.find((param) => param.id === selection.parameter)?.name_ru ?? selection.parameter
         : selection.parameter,
 
       region: !isNil(regions)
@@ -157,5 +157,3 @@ const CohortComparisonPage: React.FunctionComponent = () => {
     </MainContainer>
   );
 };
-
-export default CohortComparisonPage;

@@ -12,19 +12,19 @@ import {
   StyledDialog,
   ExpandButton
 } from './ui.styled';
-import { ChartOfProcessorResult } from '@features/chart-of-processor-result/ui';
+import { ChartOfProcessorResult } from '../../features/chart-of-processor-result/ui';
 import { Card, CardHeader } from '@plasma/ui';
-import InfoTooltip from '@entities/info-icon-with-tooltip/ui';
-import { type ProcessorConfiguration } from '@shared/api/model/ProcessorConfiguration';
+import InfoTooltip from '../../entities/info-icon-with-tooltip/ui';
+import { type ProcessorConfiguration } from 'types';
 import { RegionAgeProfileDeviationInfo, AgeValueInlineInfo, STLProcessorInfo, chartConfigs } from './block-description';
-import { LabAutocomplete } from '@features/lab-autocomplete/ui';
-import { ComparisonMenuButton } from '@features/comparison-menu-button/ui';
-import { RegionAgeProfileDeviationChartResult } from '@features/comparison-region-age-profile-deviation-chart-result/ui';
-import { ParameterAutocomplete } from '@features/parameter-autocomplete/ui';
-import { ArrowsOutSimple } from '@shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
+import { LabAutocomplete } from '../../features/lab-autocomplete/ui';
+import { ComparisonMenuButton } from '../../features/comparison-menu-button/ui';
+import { RegionAgeProfileDeviationChartResult } from '../../features/comparison-region-age-profile-deviation-chart-result/ui';
+import { ParameterAutocomplete } from '../../features/parameter-autocomplete/ui';
+import { ArrowsOutSimple } from '../../shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
 import { type PlotData } from 'plotly.js';
 
-const RegionsComparison: React.FunctionComponent = () => {
+export const RegionsComparison: React.FunctionComponent = () => {
   const [dataRegionAgeProfileDeviation, setDataRegionAgeProfileDeviation] = useState<ProcessorConfiguration>(
     defaultDataRegionAgeProfileDeviation
   );
@@ -222,4 +222,3 @@ const RegionsComparison: React.FunctionComponent = () => {
     </MainContainer>
   );
 };
-export default RegionsComparison;

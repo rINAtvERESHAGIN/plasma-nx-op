@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import type { Map as MapboxMap } from 'mapbox-gl';
-import { ContentContainer, MapContainer, RootMapContainer, Navbar, NavbarTitle } from '@pages/globe-map/ui/ui.styled';
+import { ContentContainer, MapContainer, RootMapContainer, Navbar, NavbarTitle } from './ui.styled';
 import { ThreeDimensionalGeoJson } from '../data/3d-geojson';
 import { GeoJson } from '../data/GeoJson';
 import { locations } from './locations';
@@ -9,7 +9,7 @@ import { targetCoordinates } from './constants';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2VyZ2V5MTQ4OCIsImEiOiJja3o3Mmd0Z2YwMDNpMm9ycHNxMTRrZWdqIn0.crpxKib-VbsSIvR4fgyW7g';
 
-const GlobeMapBox = (): React.ReactNode => {
+export const GlobeMapBox = (): React.ReactNode => {
   const mapContainer = useRef(null);
   const [map, setMap] = useState<MapboxMap | null>(null);
   const refs = useRef(locations.map(() => React.createRef<HTMLDivElement>()));
@@ -205,5 +205,3 @@ const GlobeMapBox = (): React.ReactNode => {
     </RootMapContainer>
   );
 };
-
-export default GlobeMapBox;

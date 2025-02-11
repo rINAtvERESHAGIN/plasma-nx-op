@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
 import { Alert, createTheme, TextField, ThemeProvider, Typography } from '@mui/material';
 import { useNavigate, useParams } from 'react-router-dom';
-import { StyledCenteredColumnBox, StyledLoginFormContainer } from '@pages/login-page/ui.styled';
-import { login } from '@pages/login-page/login.tsx';
+import { StyledCenteredColumnBox, StyledLoginFormContainer } from './ui.styled';
 import styled from 'styled-components';
 import { LoadingButton } from '@mui/lab';
+import { login } from './login';
 
 const theme = createTheme();
 
 const Container = styled.div`
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10%;
-    width: 100%;
-    height: 100%;
-    margin-top: 15%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+  width: 100%;
+  height: 100%;
+  margin-top: 15%;
 `;
 
-function LoginPage(): React.ReactNode {
+export function LoginPage(): React.ReactNode {
   const { afterAuth } = useParams();
 
   const navigate = useNavigate();
@@ -60,7 +60,7 @@ function LoginPage(): React.ReactNode {
       <Container>
         <StyledCenteredColumnBox>
           <Typography component="h1" variant="h5">
-                        Авторизация
+            Авторизация
           </Typography>
           <StyledLoginFormContainer onSubmit={handleSubmit} noValidate>
             <TextField
@@ -94,7 +94,7 @@ function LoginPage(): React.ReactNode {
             ) : null}
 
             <LoadingButton loading={isAuth} type="submit" fullWidth variant="contained">
-                            Войти
+              Войти
             </LoadingButton>
           </StyledLoginFormContainer>
         </StyledCenteredColumnBox>
@@ -102,5 +102,3 @@ function LoginPage(): React.ReactNode {
     </ThemeProvider>
   );
 }
-
-export default LoginPage;

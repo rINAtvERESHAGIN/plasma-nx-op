@@ -15,21 +15,21 @@ import {
   StyledDialog,
   ExpandButton
 } from './ui.styled';
-import { ChartOfProcessorResult } from '@features/chart-of-processor-result/ui';
-import { NumberOfRecordsCharts } from '@features/lab-page-number-of-records/ui';
-import { LabAutocomplete } from '@features/lab-autocomplete/ui';
-import { ParameterAutocomplete } from '@features/parameter-autocomplete/ui';
-import { RegionAutocomplete } from '@features/region-autocomplete/ui';
+import { ChartOfProcessorResult } from '../../features/chart-of-processor-result/ui';
+import { NumberOfRecordsCharts } from '../../features/lab-page-number-of-records/ui';
+import { LabAutocomplete } from '../../features/lab-autocomplete/ui';
+import { ParameterAutocomplete } from '../../features/parameter-autocomplete/ui';
+import { RegionAutocomplete } from '../../features/region-autocomplete/ui';
 import { isNil } from 'lodash';
 import { Card, CardHeader } from '@plasma/ui';
-import InfoTooltip from '@entities/info-icon-with-tooltip/ui';
+import InfoTooltip from '../../entities/info-icon-with-tooltip/ui';
 import { GeoCityInfo, DeviceMedianInfo, chartConfigs } from './block-description';
-import { type ProcessorConfiguration } from '@shared/api/model/ProcessorConfiguration';
-import { ArrowsOutSimple } from '@shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
-import { DeviceMedianProcessorResult } from '@features/device-median-chart/processor-result';
+import { type ProcessorConfiguration } from 'types';
+import { ArrowsOutSimple } from '../../shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
+import { DeviceMedianProcessorResult } from '../../features/device-median-chart/processor-result';
 import { type PlotData } from 'plotly.js';
 
-const LabPage: React.FunctionComponent = () => {
+export const LabPage: React.FunctionComponent = () => {
   const [selectedLab, setSelectedLab] = useState<number | null>(null);
   const [selectedParameter, setSelectedParameter] = useState<number | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<number[]>([]);
@@ -212,5 +212,3 @@ const LabPage: React.FunctionComponent = () => {
     </MainContainer>
   );
 };
-
-export default LabPage;

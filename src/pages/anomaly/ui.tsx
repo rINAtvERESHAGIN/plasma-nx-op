@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import { Container, HeaderButton, ButtonRow, HeaderContainer, StyledDialog, ExpandButton } from './ui.styled';
-import { ChartOfProcessorResult } from '@features/chart-of-processor-result/ui';
+import { ChartOfProcessorResult } from '../../features/chart-of-processor-result/ui';
 import { defaultDataStatTest, defaultDataSTL } from './constants';
 import { Card, CardHeader } from '@plasma/ui';
-import InfoTooltip from '@entities/info-icon-with-tooltip/ui';
+import InfoTooltip from '../../entities/info-icon-with-tooltip/ui';
 import { StatTestInfo, TableInfo, STLInfo, chartConfigs } from './block-description';
-import { type ProcessorConfiguration } from '@shared/api/model/ProcessorConfiguration';
+import { type ProcessorConfiguration } from 'types';
 import { isNil } from 'lodash';
-import { AnomalyTable } from '@features/table-anomalies/ui';
+import { AnomalyTable } from '../../features/table-anomalies/ui';
 import {
   type ActiveStatTestButton,
   type GraphMixerFunction,
   type UpdateDataSetHelper,
   type UpdateDataSet
 } from './type';
-import { ArrowsOutSimple } from '@shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
+import { ArrowsOutSimple } from '../../shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
 import { type PlotData } from 'plotly.js';
 
-const AnomalyPage: React.FunctionComponent = () => {
+export const AnomalyPage: React.FunctionComponent = () => {
   const [dataStatTest, setDataStatTest] = useState<ProcessorConfiguration>(defaultDataStatTest);
   const [dataSTL, setDataSTL] = useState<ProcessorConfiguration>(defaultDataSTL);
 
@@ -165,4 +165,4 @@ const AnomalyPage: React.FunctionComponent = () => {
   );
 };
 
-export default AnomalyPage;
+

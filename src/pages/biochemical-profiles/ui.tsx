@@ -7,13 +7,13 @@ import {
 import { type PlotMouseEvent } from 'plotly.js';
 import { isNil } from 'lodash';
 import { MainContainer, HeaderContainer, LeftContainer, RightContainer } from './ui.styled';
-import { ChartOfProcessorResult } from '@features/chart-of-processor-result/ui';
+import { ChartOfProcessorResult } from '../../features/chart-of-processor-result/ui';
 import { Card, CardHeader } from '@plasma/ui';
-import InfoTooltip from '@entities/info-icon-with-tooltip/ui';
-import { type ProcessorConfiguration } from '@shared/api/model/ProcessorConfiguration';
+import InfoTooltip from '../../entities/info-icon-with-tooltip/ui';
+import { type ProcessorConfiguration } from 'types';
 import { UnrecognizedProfileInfo, WeekDiseasesProfileInfo, DiseasesProfileInfo } from './block-description';
 
-const BiochemicalProfiles: React.FunctionComponent = () => {
+export const BiochemicalProfiles: React.FunctionComponent = () => {
   const [dataUnrecognizedProfile, setDataUnrecognizedProfile] =
     useState<ProcessorConfiguration>(defaultDataUnrecognizedProfile);
   const [dataDiseasesProfile, setDataDiseasesProfile] = useState<ProcessorConfiguration>(defaultDataDiseasesProfile);
@@ -103,4 +103,4 @@ const BiochemicalProfiles: React.FunctionComponent = () => {
     </MainContainer>
   );
 };
-export default BiochemicalProfiles;
+

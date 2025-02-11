@@ -1,19 +1,19 @@
 import React, { useMemo, useState } from 'react';
 import { defaultDataTrend, defaultDataAgeValue, defaultDataSurface3d, defaultDataAgeSexPyramid } from './data-сonfig';
 import { MainContainer, HeaderContainer, StyledDialog, ExpandButton } from './ui.styled';
-import { ChartOfProcessorResult } from '@features/chart-of-processor-result/ui';
+import { ChartOfProcessorResult } from '../../features/chart-of-processor-result/ui';
 import { isNil } from 'lodash';
 import { Card, CardHeader } from '@plasma/ui';
-import InfoTooltip from '@entities/info-icon-with-tooltip/ui';
+import InfoTooltip from '../../entities/info-icon-with-tooltip/ui';
 import { TrendInfo, Surface3dInfo, ThirdSectionDescriptionsInfo, chartConfigs } from './block-description';
-import { TrendFilterOptions } from '@features/trend-page-filter/ui';
+import { TrendFilterOptions } from '../../features/trend-page-filter/ui';
 import { defaultFilters, thirdSectionButtons } from './constants';
 import type { TrendFilterValues } from './type';
-import { SelectableButton } from '@shared/ui/sroty-selectable-button/ui';
-import { ArrowsOutSimple } from '@shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
+import { SelectableButton } from '../../shared/ui/sroty-selectable-button/ui';
+import { ArrowsOutSimple } from '../../shared/draft-icons/arrows-out-simple/ArrowsOutSimple';
 import { type PlotData } from 'plotly.js';
 
-const TrendPage: React.FunctionComponent = () => {
+export const TrendPage: React.FunctionComponent = () => {
   const [filters, setFilters] = useState<TrendFilterValues>(defaultFilters);
 
   const [selectedFrequency, setSelectedFrequency] = useState<'day' | 'week'>('week');
@@ -175,5 +175,3 @@ const TrendPage: React.FunctionComponent = () => {
     </MainContainer>
   );
 };
-
-export default TrendPage;
