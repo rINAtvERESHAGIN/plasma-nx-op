@@ -1,11 +1,9 @@
-import RegionService from '@shared/api/services/RegionService';
-import LabsService from '@shared/api/services/LabsService';
-import ParametersService from '@shared/api/services/ParameterService';
-import { store } from '@app/store';
-import { initParameters } from '@pages/parameter/model';
-import { setLabs } from '@shared/model/labs';
-import { setRegions } from '@shared/model/regions';
-import { setApplicationStatus } from '@shared/ui/application status/model';
+import { LabsService, RegionService, ParametersService } from '../services';
+import { store } from '@org/store-redux';
+import { initParameters } from '../../../pages/parameter/model';
+import { setLabs } from '../../../shared/model/labs';
+import { setRegions } from '../../../shared/model/regions';
+import { setApplicationStatus } from '../../../shared/ui/application-status/model';
 
 export const loaderComparison = async () => {
   try {

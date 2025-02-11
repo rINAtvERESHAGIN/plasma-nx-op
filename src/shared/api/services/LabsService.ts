@@ -1,10 +1,9 @@
-
 import { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
-import { Lab } from '../../../../types/src/lib/Lab';
+import { Lab } from 'types';
 
-class LabsService {
+export class LabsService {
   static requestLabs(): CancelablePromise<Lab[]> {
     return __request(OpenAPI, {
       method: 'GET',
@@ -12,5 +11,3 @@ class LabsService {
     });
   }
 }
-
-export default LabsService;

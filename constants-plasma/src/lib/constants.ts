@@ -1,6 +1,7 @@
 import { T } from "types";
 
 export const comparisonDefaultDate = 'Thu Jan 01 2015 03:00:00 GMT+0300 (Moscow Standard Time)';
+
 export const monthGradients: Record<T, string> = {
     // Winter Months
     0: 'linear-gradient(to right, #66a6ff, #89f7fe)',

@@ -4,8 +4,7 @@ import { UserProfile } from '../../../pages/personal-account/model';
 import { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 
-
-class AuthService {
+export class AuthService {
   static requestAuthorization(username: string, password: string): CancelablePromise<ApiResult<unknown>> {
     const formData = new FormData();
     formData.append('username', username);
@@ -39,5 +38,3 @@ class AuthService {
     });
   }
 }
-
-export default AuthService;

@@ -3,7 +3,7 @@ import { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
 
-class ProcessorsService {
+export class ProcessorsService {
     static requestProcessors(): CancelablePromise<any> {
         return __request(OpenAPI, {
             method: 'GET',
@@ -12,4 +12,4 @@ class ProcessorsService {
     }
 }
 
-export default ProcessorsService;
+

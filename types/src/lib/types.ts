@@ -4,6 +4,7 @@ export { ChartId } from './ChartId';
 export { Comparison } from './Comparison';
 export { Lab } from './Lab';
 export { LabNameRU } from './LabNameRU';
+export { RequestCohortaData } from './RequestCohortaData';
 export { Parameter } from './Parameter';
 export { IParameterDetails } from './ParameterDetails';
 export { PlotData } from './PlotData';

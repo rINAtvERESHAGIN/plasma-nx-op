@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
 import { Typography } from '@mui/material';
-import { useProcessorsCore } from '@app/core-data-slice/reducer';
-import ProcessorParamsForm from '@features/processor-params-form/ui';
+import ProcessorParamsForm from '../../features/processor-params-form/ui';
 import { FieldsContainer, ProcessorContainer } from './ui.styled';
+import { useProcessorsCore } from '@org/store-redux';
 
-const ProcessorsGallery: React.FunctionComponent = () => {
+export const ProcessorsGallery: React.FunctionComponent = () => {
   const processors = useProcessorsCore();
 
   useEffect(() => {
-    if (processors?.data !== undefined) {
-    }
+    if (processors?.data !== undefined) { /* empty */ }
   }, [processors]);
 
   return (
@@ -29,5 +28,3 @@ const ProcessorsGallery: React.FunctionComponent = () => {
     </>
   );
 };
-
-export default ProcessorsGallery;

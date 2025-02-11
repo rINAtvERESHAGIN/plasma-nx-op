@@ -1,3 +1,4 @@
+import { DatasetSpecificationStatus } from "./DatasetSpecificationStatus"
 
 
 export interface IPropsDatasetSpecification {

@@ -3,7 +3,7 @@ import { type DatasetSpecification } from '@shared/api/model/Comparison';
 import { OpenAPI } from '@shared/api/core/OpenAPI';
 import { request as __request } from '../core/request';
 
-class ComparisonService {
+export class ComparisonService {
   static requestSaveComparison (traces: DatasetSpecification[]): CancelablePromise<DatasetSpecification> {
     return __request(OpenAPI, {
       method: 'POST',
@@ -13,4 +13,4 @@ class ComparisonService {
   }
 }
 
-export default ComparisonService;
+

@@ -1,7 +1,6 @@
-
-import { RootState, useAppSelector } from '../../lib/store-plasma';
+import { RootState, useAppSelector } from '../../lib/store-redux';
 import { AllRegion, Lab, Parameter, Timeline } from 'types';
-import { createSlice, ThunkAction,PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, ThunkAction, PayloadAction } from '@reduxjs/toolkit';
 
 interface InitialState {
   _labs: {

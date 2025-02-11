@@ -1,7 +1,7 @@
-import { request as __request } from '@shared/api/core/request';
-import { OpenAPI } from '@shared/api/core/OpenAPI';
-import { type CancelablePromise } from '@shared/api/core/CancelablePromise';
-import { type ProInflammatoryIndicators } from '../../../../types/src/lib/ProInflammatoryIndicatorsTableData';
+import { request as __request } from '../core/request';
+import { OpenAPI } from '../core/OpenAPI';
+import { type CancelablePromise } from '../core/CancelablePromise';
+import { type ProInflammatoryIndicators } from 'types';
 
 export class ProInflammatoryIndicatorsTableService {
   static requestGetProInflammatoryIndicatorsTable(): CancelablePromise<ProInflammatoryIndicators> {

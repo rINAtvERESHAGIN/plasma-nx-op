@@ -4,6 +4,7 @@ import { useCreateBlockNote } from '@blocknote/react';
 import '@blocknote/mantine/style.css';
 import { useAppSelector } from '@org/store-redux';
 
+
 const StyledBlocknote = styled.div`
   height: 100vh;
   background-color: #fff;

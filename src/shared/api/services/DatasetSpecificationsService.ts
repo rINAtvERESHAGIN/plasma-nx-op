@@ -1,9 +1,9 @@
 import { type CancelablePromise } from '../core/CancelablePromise';
-import { type DatasetSpecification } from '../../../../types/src/lib/Comparison';
+import { type DatasetSpecification } from 'types';
 import { request as __request } from '../core/request';
 import { OpenAPI } from '../core/OpenAPI';
 
-class DatasetSpecificationsService {
+export class DatasetSpecificationsService {
   static requestSendDatasetSpecifications (params: DatasetSpecification[]): CancelablePromise<DatasetSpecification> {
     return __request(OpenAPI, {
       method: 'POST',
@@ -13,4 +13,4 @@ class DatasetSpecificationsService {
   }
 }
 
-export default DatasetSpecificationsService;
+

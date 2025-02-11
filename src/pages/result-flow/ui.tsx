@@ -215,7 +215,7 @@ const ResultFlow: React.FunctionComponent = () => {
   );
 };
 
-export default () => (
+export const ResultFlowWithReactFlowProvider = () => (
   <ReactFlowProvider>
     <ResultFlow />
   </ReactFlowProvider>

@@ -1,9 +1,9 @@
 import { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
-import { type AllRegion } from '../../../../types/src/lib/AllRegion';
+import { type AllRegion } from 'types';
 
-class RegionInfoService {
+export class RegionInfoService {
   static requestRegionInfo(): CancelablePromise<AllRegion> {
     return __request(OpenAPI, {
       method: 'GET',
@@ -11,5 +11,3 @@ class RegionInfoService {
     });
   }
 }
-
-export default RegionInfoService;

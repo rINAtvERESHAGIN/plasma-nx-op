@@ -1,7 +1,7 @@
-import { request as __request } from '@shared/api/core/request';
-import { OpenAPI } from '@shared/api/core/OpenAPI';
-import { type CancelablePromise } from '@shared/api/core/CancelablePromise';
-import { type AnomalyTableData } from '../../../../types/src/lib/AnomalyTableData';
+import { request as __request } from '../../api/core/request';
+import { OpenAPI } from '../../api/core/OpenAPI';
+import { type CancelablePromise } from '../../api/core/CancelablePromise';
+import { type AnomalyTableData } from 'types';
 
 export class AnomaliesTableService {
   static requestGetAnomaliesTable(): CancelablePromise<AnomalyTableData> {

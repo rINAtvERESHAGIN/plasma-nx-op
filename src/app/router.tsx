@@ -5,12 +5,15 @@ import { Root } from '../pages/root/ui';
 import SuspenseWithFallBack from '../shared/ui/suspense-with-fallback/ui';
 import { lazy } from 'react';
 import { mainLoader } from '../pages/map/lib/loader';
+import { loaderComparison } from '../shared';
 
 const SplitMainPage = lazy(async () => ({ default: (await import('../pages/main-page-split/ui/ui')).SplitMainPage }));
 const ParametersGallery = lazy(async () => ({ default: (await import('../pages')).ParametersGallery }));
 const ParameterInfo = lazy(async () => ({ default: (await import('../pages')).ParameterInfo }));
 const Review = lazy(async () => ({ default: (await import('../pages')).Review }));
 const DatasetSpecifications = lazy(async () => ({ default: (await import('../pages')).DatasetSpecifications }));
+const ProcessorsGallery = lazy(async () => ({ default: (await import('../pages')).ProcessorsGallery }));
+const ResultFlow = lazy(async () => ({ default: (await import('../pages')).ResultFlow }));
 
 export const router = createBrowserRouter([
   {
@@ -61,6 +64,18 @@ export const router = createBrowserRouter([
         path: 'comparison',
         element: <DatasetSpecifications />,
         loader: loaderComparison
+      },
+      // {
+      //   path: 'blocknote',
+      //   element: <BlocknoteCore />
+      // },
+      {
+        path: 'processors-gallery',
+        element: <ProcessorsGallery />
+      },
+      {
+        path: 'result-flow',
+        element: <ResultFlow />
       },
     ]
   }

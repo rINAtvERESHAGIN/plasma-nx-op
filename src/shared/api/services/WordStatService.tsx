@@ -1,8 +1,8 @@
-import { request as __request } from '@shared/api/core/request';
-import { OpenAPI } from '@shared/api/core/OpenAPI';
-import { type CancelablePromise } from '@shared/api/core/CancelablePromise';
-import { type SendPhraseParams, type PhrasesResponse } from '../../../../types/src/lib/WordStat';
-import { type PlotData } from '../../../../types/src/lib/PlotData';
+import { request as __request } from '../core/request';
+import { OpenAPI } from '../core/OpenAPI';
+import { type CancelablePromise } from '../core/CancelablePromise';
+import { type SendPhraseParams, type PhrasesResponse } from 'types';
+import { type PlotData } from 'types';
 
 export class WordStatService {
   static requestGetPhrases(): CancelablePromise<PhrasesResponse> {

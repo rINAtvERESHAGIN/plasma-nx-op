@@ -5,7 +5,7 @@ import { ThemeProvider } from '@mui/material';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { ruRU } from '@mui/x-date-pickers/locales';
-import ApplicationStatus from './shared/ui/application status/ui';
+import ApplicationStatus from './shared/ui/application-status/ui';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './app/router';
 import { store } from '@org/store-redux';
