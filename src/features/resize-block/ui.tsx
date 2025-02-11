@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Resizable, type ResizeCallback, type ResizeStartCallback } from 're-resizable';
-import { styled } from 'styled-components';
+import styled  from 'styled-components';
 import { useState } from 'react';
 import { enable } from './constats';
 

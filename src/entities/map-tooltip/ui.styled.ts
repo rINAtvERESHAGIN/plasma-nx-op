@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import styled  from 'styled-components';
 import { type TooltipProps } from './type';
 
 export const TooltipContainer = styled.div<TooltipProps>`

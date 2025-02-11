@@ -1,4 +1,4 @@
-import ReviewInfoService from '../../../shared/api/services/ReviewService';
+import { ReviewInfoService } from '../../../shared';
 
 export function loaderReviewInfo() {
   return ReviewInfoService.requestReviewInfo();

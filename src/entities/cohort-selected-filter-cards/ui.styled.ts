@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import styled  from 'styled-components';
 import '@fontsource/geologica/400.css';
 import '@fontsource/geologica/300.css';
 

@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import styled  from 'styled-components';
 import '@fontsource/geologica';
 
 export const MainContainer = styled.div`

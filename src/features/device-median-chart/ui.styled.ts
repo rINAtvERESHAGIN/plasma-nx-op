@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import styled  from 'styled-components';
 import Plot from 'react-plotly.js';
 import { Box } from '@mui/material';
 

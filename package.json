@@ -28,7 +28,7 @@
     "@mui/lab": "6.0.0-beta.26",
     "@mui/material": "^6.4.3",
     "@mui/x-data-grid": "^7.26.0",
-    "@mui/x-date-pickers": "^7.26.0",
+    "@mui/x-date-pickers": "^7.9.0",
     "@plasma/ui": "^2.0.0",
     "@reduxjs/toolkit": "2.5.0",
     "@tanstack/react-table": "^8.20.6",
